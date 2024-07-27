@@ -13,7 +13,6 @@ import img2 from "../../assets/treatments/abdominoplasty/2.png";
 import img3 from "../../assets/treatments/abdominoplasty/3.png";
 import after from "../../assets/treatments/abdominoplasty/after.png";
 import before from "../../assets/treatments/abdominoplasty/before.png";
-import { assets } from "../../assets/assets";
 export default function Abdominoplasty() {
   const service = {
     name: "Abdominoplasty",
