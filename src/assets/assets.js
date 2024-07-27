@@ -38,6 +38,7 @@ import feature3 from './feature3.jpeg'
 import feature4 from './feature4.jpeg'
 import feature5 from './feature5.jpeg'
 import feature6 from './feature6.jpeg'
+import client from './client.jpeg'
 
 export const assets = {
   logo,
@@ -79,5 +80,6 @@ av3,
   feature3,
   feature4,
   feature5,
-  feature6
+  feature6,
+  client
 };

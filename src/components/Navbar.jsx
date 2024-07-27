@@ -110,7 +110,7 @@ export default function Navbar() {
         {
           title: "Abdominoplasty",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/abdominoplasty",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -551,12 +551,12 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`mt-0 relative z-20 bg-white w-full md:static md:text-sm md:border-none ${
+        className={`mt-0 relative z-20 bg-white rounded-xl w-full md:static md:text-sm md:border-none ${
           state ? "shadow-lg rounded-b-xl md:shadow-none" : ""
         }`}
       >
-        <div className="items-center gap-x-14 px-4 max-w-screen-xl mx-auto md:flex md:px-8">
-          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+        <div className="items-center gap-x-14 px-2 max-w-screen-xl mx-auto md:flex md:px-8">
+          <div className="flex items-center justify-between py-1 md:py-5 md:block">
             <NavLink exact to="/">
               <img src={logo} width={120} height={50} alt="logo" />
             </NavLink>
@@ -596,17 +596,17 @@ export default function Navbar() {
             </div>
           </div>
           <div
-            className={`nav-menu bg-white flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`nav-menu  flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
               state ? "block" : "hidden"
             }`}
           >
-            <ul className=" bg-white items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+            <ul className="  items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
               {navigation.map((item, idx) => {
                 return (
                   <li key={idx}>
                     {item.isDrapdown ? (
                       <button
-                        className="w-full flex items-center justify-between gap-1 text-gray-700 hover:text-indigo-600"
+                        className="w-full text-lg text-center font-semibold flex items-center justify-between gap-1 text-[#9d56b6] hover:text-indigo-600"
                         onClick={() =>
                           setDrapdownState({
                             idx,
@@ -647,7 +647,7 @@ export default function Navbar() {
                       <NavLink
                         exact
                         to={item.path}
-                        className="block text-gray-700 hover:text-indigo-600"
+                        className="block text-[#9d56b6] font-semibold text-lg hover:text-indigo-600"
                       >
                         {item.title}
                       </NavLink>
@@ -673,7 +673,7 @@ export default function Navbar() {
                                         {navItem.icon}
                                       </div> */}
                                       <div>
-                                        <p className = "text-gray-800 duration-200 group-hover:text-indigo-600 text-xl  md:text-base">
+                                        <p className="text-gray-800 duration-200 group-hover:text-indigo-600 text-xl  md:text-base">
                                           {navItem.title}
                                         </p>
                                         {/* <p className="text-sm text-gray-600 group-hover:text-gray-800 mt-1">

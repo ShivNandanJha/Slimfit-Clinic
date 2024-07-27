@@ -1,4 +1,5 @@
-import herobanner from "../assets/banner.svg";
+import { assets } from "../assets/assets";
+import herobanner from "../assets/Home.svg";
 import Faqs from "../components/Faqs";
 import Content from "../components/Feature";
 
@@ -8,7 +9,7 @@ const Home = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    boxShadow: "850px 0px 0px 0px  rgba(228, 217, 219, 0.479) inset",
+    boxShadow: "850px 0px 0px 0px   bg-[#f4f1ed] inset",
   };
   const stats = [
     {
@@ -33,9 +34,9 @@ const Home = () => {
       <section className="relative -z-10  " style={sectionStyle}>
         <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
 
-        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-start ">
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className="text-3xl font-bold text-white sm:text-5xl fontFamily: font-Playfair ">
+            <h1 className="text-3xl text-start font-bold  sm:text-5xl fontFamily: font-Playfair ">
               Complete Aesthetic Solutions for
               <strong className="block font-bold text-rose-500">
                 {" "}
@@ -43,7 +44,7 @@ const Home = () => {
               </strong>
             </h1>
 
-            <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">
+            {/* <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">
               step into a world where your beauty aspirations become reality.
               Our dedicated team offers a range of services, including targeted
               weight loss plans, state-of-the-art hair transplants, and
@@ -51,7 +52,7 @@ const Home = () => {
               reconstructions, liposuction, and mummy makeovers. Perfect your
               special day with our exquisite bridal makeup services. Your
               transformation starts here.
-            </p>
+            </p> */}
 
             <div className="mt-8 flex flex-wrap gap-4 text-center">
               <a
@@ -77,11 +78,7 @@ const Home = () => {
       <section className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/squared-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
         <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-x-12 items-start justify-between lg:flex md:px-8">
           <div className="sm:hidden lg:block lg:max-w-xl">
-            <img
-              src="https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              className="rounded-lg"
-              alt=""
-            />
+            <img src={assets.client} className="rounded-lg" alt="" />
           </div>
           <div className="mt-6 gap-12 sm:mt-0 md:flex lg:block">
             <div className="max-w-2xl">
@@ -115,11 +112,11 @@ const Home = () => {
         <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24">
           <div className="text-center">
             <h1 className="text-4xl sm:text-6xl font-bold text-gray-800 dark:text-neutral-200">
-              Insights
+              Request a Callback
             </h1>
 
             <p className="mt-3 text-gray-600 dark:text-neutral-400">
-              Stay in the know with insights from industry experts.
+             Want To know more about us
             </p>
 
             <div className="mt-7 sm:mt-12 mx-auto max-w-xl relative">
