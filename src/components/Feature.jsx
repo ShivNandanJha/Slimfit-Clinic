@@ -105,19 +105,19 @@ const Content = () => {
               care and achieve radiant results today.
             </p>
           </div>  </div>
-                <div className="space-y-24 overflow-y-auto prose-sm prose text-gray-500 divide-y max-h-[50vh] mpx-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl prose-headings:font-normal prose-headings:text-xl">
+                <div className="space-y-20 overflow-y-auto prose-sm prose text-gray-500 divide-y max-h-[50vh] mpx-8  mx-auto md:px-12 lg:px-32 max-w-7xl prose-headings:font-normal prose-headings:text-xl ">
                   <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-32">
                     <div>
                       <div className="top-0 lg:sticky lg:pb-16">
-                        <div className="pt-8"><p>16 March - 2024</p></div>
+                        <div className="pt-8"><h1 className="text-4xl" >Head And Face</h1></div>
                       </div>
                     </div>
                     <div className="pt-8 lg:col-span-2">
                       <div className="flex-shrink-0">
                         <div className="mx-auto">
                           <img className="aspect-[4/3] object-cover" src={assets.feature1} alt="#_"/>
-                          <h1>80% faster widgets</h1>
-                          <p className="line-clamp-4">
+                        
+                          <p className="line-clamp-4 mt-5 ">
                             In our latest update, we've revolutionized the performance of our
                             widgets, achieving a remarkable 80% increase in loading speeds.
                             This breakthrough ensures a seamless experience across all
@@ -133,15 +133,14 @@ const Content = () => {
                   <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-32">
                     <div>
                       <div className="top-0 lg:sticky lg:pb-16">
-                        <div className="pt-8"><p>1 March - 2024</p></div>
+                        <div className="pt-8"><h1 className="text-4xl" >Body Contouring </h1></div>
                       </div>
                     </div>
                     <div className="pt-8 lg:col-span-2">
                       <div className="flex-shrink-0">
                         <div className="mx-auto">
                           <img className="aspect-[4/3] object-cover" src={assets.feature2} alt="#_"/>
-                          <h1>Teams support</h1>
-                          <p className="line-clamp-4">
+                          <p className="line-clamp-4 mt-5 ">
                             Expanding your business operations has never been easier with our
                             new Teams support feature. Now, you can empower your team by
                             inviting members to manage and run your Snowpeak store
@@ -157,15 +156,14 @@ const Content = () => {
                   <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-32">
                     <div>
                       <div className="top-0 lg:sticky lg:pb-16">
-                        <div className="pt-8"><p>20 February - 2024</p></div>
+                        <div className="pt-8"><h1 className="text-4xl" >Non surgical Treatments</h1></div>
                       </div>
                     </div>
                     <div className="pt-8 lg:col-span-2">
                       <div className="flex-shrink-0">
                         <div className="mx-auto">
                           <img className="aspect-[4/3] object-cover" src={assets.feature3} alt="#_"/>
-                          <h1>Modify subscriptions in the dashboard</h1>
-                          <p className="line-clamp-4">
+                          <p className="line-clamp-4 mt-5 ">
                             brought the power of our API directly to your fingertips
                             with an intuitive dashboard feature that allows for effortless
                             modification of subscription plans. Now, managing your
@@ -182,15 +180,14 @@ const Content = () => {
                   <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-32">
                     <div>
                       <div className="top-0 lg:sticky lg:pb-16">
-                        <div className="pt-8"><p>28 February - 2024</p></div>
+                        <div className="pt-8"><h1 className="text-4xl" >Breast Surgery</h1></div>
                       </div>
                     </div>
                     <div className="pt-8 lg:col-span-2">
                       <div className="flex-shrink-0">
                         <div className="mx-auto">
                           <img className="aspect-[4/3] object-cover" src={assets.feature5} alt="#_"/>
-                          <h1>New Analytics Dashboard</h1>
-                          <p className="line-clamp-4">
+                          <p className="line-clamp-4 mt-5 ">
                             Unveiling our latest innovation, the Analytics Dashboard, designed
                             to offer deeper insights into your performance with just a
                             glance. Track visitor behavior, sales trends, and more with our
@@ -206,15 +203,14 @@ const Content = () => {
                   <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-32">
                     <div>
                       <div className="top-0 lg:sticky lg:pb-16">
-                        <div className="pt-8"><p>10 February - 2024</p></div>
+                        <div className="pt-8"><h1 className="text-4xl" >Mummy Makeover</h1></div>
                       </div>
                     </div>
                     <div className="pt-8 lg:col-span-2">
                       <div className="flex-shrink-0">
                         <div className="mx-auto">
                           <img className="aspect-[4/3] object-cover" src={assets.feature4} alt="#_"/>
-                          <h1>Enhanced Security Features</h1>
-                          <p className="line-clamp-4">
+                          <p className="line-clamp-4 mt-5 ">
                             Security is paramount, and with our latest update,
                             introducing enhanced security features to safeguard your online
                             store. Benefit from advanced encryption, real-time monitoring, and
@@ -230,15 +226,14 @@ const Content = () => {
                   <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-32">
                     <div>
                       <div className="top-0 lg:sticky lg:pb-16">
-                        <div className="pt-8"><p>25 March - 2023</p></div>
+                        <div className="pt-8"><h1 className="text-4xl" >Bridal Makeup</h1></div>
                       </div>
                     </div>
-                    <div className="pt-8 lg:col-span-2">
-                      <div className="flex-shrink-0">
-                        <div className="mx-auto">
-                          <img className="aspect-[4/3] object-cover" src={assets.feature6} alt="#_"/>
-                          <h1>New Feature Launch: Interactive Dashboards</h1>
-                          <p className="line-clamp-4">
+                    <div className = "pt-8 lg:col-span-2">
+                    <div className = "flex-shrink-0">
+                    <div className = "mx-auto">
+                    <img className = "aspect-[4/3] object-cover" src = {assets.feature6} alt = "#_"/>
+                    <p className="line-clamp-4 mt-5 ">
                             Our latest update introduces Interactive Dashboards, allowing
                             users to dynamically interact with their data like never before.
                             Customize, explore, and gain insights in a wholly intuitive and

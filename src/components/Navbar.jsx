@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import logo from '../assets/logo.png'
+import logo from "../assets/logo.png";
+import { NavLink } from "react-router-dom";
 export default function Navbar() {
   const dropdownNavs = [
     {
@@ -224,7 +225,6 @@ export default function Navbar() {
               <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
             </svg>
           ),
-          
         },
         {
           title: "Laser Treatments",
@@ -266,11 +266,9 @@ export default function Navbar() {
             </svg>
           ),
         },
-        
       ],
     },
 
-
     {
       label: "Non Surgical Treatments",
       navs: [
@@ -312,7 +310,6 @@ export default function Navbar() {
               <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
             </svg>
           ),
-          
         },
         {
           title: "Laser Treatments",
@@ -354,7 +351,6 @@ export default function Navbar() {
             </svg>
           ),
         },
-        
       ],
     },
     {
@@ -398,7 +394,6 @@ export default function Navbar() {
               <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
             </svg>
           ),
-          
         },
         {
           title: "Laser Treatments",
@@ -440,7 +435,6 @@ export default function Navbar() {
             </svg>
           ),
         },
-        
       ],
     },
     {
@@ -484,7 +478,6 @@ export default function Navbar() {
               <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
             </svg>
           ),
-          
         },
         {
           title: "Laser Treatments",
@@ -526,9 +519,8 @@ export default function Navbar() {
             </svg>
           ),
         },
-        
       ],
-    },    
+    },
   ];
   const [state, setState] = useState(false);
   const [drapdownState, setDrapdownState] = useState({
@@ -539,14 +531,13 @@ export default function Navbar() {
   // Replace javascript:void(0) paths with your paths
   const navigation = [
     {
-      title: "Features",
-      path: "javascript:void(0)",
+      title: "Services",
       isDrapdown: true,
       navs: dropdownNavs,
     },
-    { title: "Integrations", path: "javascript:void(0)", isDrapdown: false },
-    { title: "Customers", path: "javascript:void(0)", isDrapdown: false },
-    { title: "Pricing", path: "javascript:void(0)", isDrapdown: false },
+    { title: "About", path: "/about", isDrapdown: false },
+    { title: "Contact Us", path: "/contact", isDrapdown: false },
+    // { title: "Pricing", path: "javascript:void(0)", isDrapdown: false },
   ];
 
   useEffect(() => {
@@ -566,14 +557,9 @@ export default function Navbar() {
       >
         <div className="items-center gap-x-14 px-4 max-w-screen-xl mx-auto md:flex md:px-8">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="javascript:void(0)">
-              <img
-               src={logo}
-                width={120}
-                height={50}
-                alt="logo"
-              />
-            </a>
+            <NavLink exact to="/">
+              <img src={logo} width={120} height={50} alt="logo" />
+            </NavLink>
             <div className="md:hidden">
               <button
                 className="text-gray-500 hover:text-gray-800"
@@ -658,12 +644,13 @@ export default function Navbar() {
                         )}
                       </button>
                     ) : (
-                      <a
-                        href={item.path}
+                      <NavLink
+                        exact
+                        to={item.path}
                         className="block text-gray-700 hover:text-indigo-600"
                       >
                         {item.title}
-                      </a>
+                      </NavLink>
                     )}
                     {item.isDrapdown &&
                     drapdownState.idx == idx &&
@@ -686,9 +673,9 @@ export default function Navbar() {
                                         {navItem.icon}
                                       </div> */}
                                       <div>
-                                        <span className="text-gray-800 duration-200 group-hover:text-indigo-600 text-sm font-medium md:text-base">
+                                        <p className = "text-gray-800 duration-200 group-hover:text-indigo-600 text-xl  md:text-base">
                                           {navItem.title}
-                                        </span>
+                                        </p>
                                         {/* <p className="text-sm text-gray-600 group-hover:text-gray-800 mt-1">
                                           {navItem.desc}
                                         </p> */}
@@ -709,20 +696,13 @@ export default function Navbar() {
               })}
               <div className="flex-1 items-center justify-end gap-x-6 space-y-3 md:flex md:space-y-0">
                 <li>
-                  <a
-                    href="javascript:void(0)"
-                    className="block py-3 text-center text-gray-700 hover:text-indigo-600 border rounded-lg md:border-none"
-                  >
-                    Log in
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:void(0)"
+                  <NavLink
+                    exact
+                    to="/appointment"
                     className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline"
                   >
-                    Sign in
-                  </a>
+                    Get Appointment →
+                  </NavLink>
                 </li>
               </div>
             </ul>

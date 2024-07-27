@@ -8,6 +8,7 @@ const Home = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
+    boxShadow: "850px 0px 0px 0px  rgba(228, 217, 219, 0.479) inset",
   };
   const stats = [
     {
@@ -29,14 +30,14 @@ const Home = () => {
   ];
   return (
     <div>
-      <section className="relative -z-10" style={sectionStyle}>
-        <div className="absolute inset-0 bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+      <section className="relative -z-10  " style={sectionStyle}>
+        <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
 
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className="text-3xl font-extrabold text-white sm:text-5xl">
+            <h1 className="text-3xl font-bold text-white sm:text-5xl fontFamily: font-Playfair ">
               Complete Aesthetic Solutions for
-              <strong className="block font-extrabold text-rose-500">
+              <strong className="block font-bold text-rose-500">
                 {" "}
                 Your Health and Beauty Needs{" "}
               </strong>
@@ -57,7 +58,7 @@ const Home = () => {
                 href="#"
                 className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
               >
-               Contact →
+                Contact →
               </a>
 
               <a
@@ -72,9 +73,8 @@ const Home = () => {
       </section>
       <Content />
       {/* --------------------Success Section---------------- */}
-     
-      <section className =  "relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/squared-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
-      
+
+      <section className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/squared-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
         <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-x-12 items-start justify-between lg:flex md:px-8">
           <div className="sm:hidden lg:block lg:max-w-xl">
             <img
