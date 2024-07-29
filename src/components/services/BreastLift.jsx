@@ -15,7 +15,7 @@ import img2 from "../../assets/treatments/breastLift/2.png";
 import img3 from "../../assets/treatments/breastLift/3.png";
 import after from "../../assets/treatments/breastLift/after.png";
 import before from "../../assets/treatments/breastLift/before.png";
-const BreastLift       = () => {
+const BreastLift = () => {
   const service = {
     name: "Breast Lift",
     about:
@@ -30,10 +30,12 @@ const BreastLift       = () => {
       before: before,
       after: after,
     },
-    description:"A mastopexy is performed under general anesthesia or intravenous sedation in a hospital, free standing surgical center or surgeon’s office equipped with a surgical suite. Different techniques for removing breast skin and reshaping the breast determine the location of the incisions and resulting scars. Your surgeon will select a technique based on your breast size and shape, areola size and position, degree of breast sagging, skin quality and elasticity and how much extra skin you have. Your plastic surgeon will remove excess breast skin and shift the nipple and areola to a higher position.If your areola has become stretched, it can now be reduced in size.Skin that was formerly located above the areola is brought down and together, beneath the breast, to reshape the breast.Your surgeon will remove excess skin and close your incisions, tightening the skin, sewing the breast back together and placing sutures deep in the breast tissue to support the new breast position for a longer period of time.Scars are usually hidden under the breasts, although some light scarring may be seen on top of the breast.The nipples and areolas remain attached to underlying mounds of tissue, and this usually allows for the preservation of sensation and the ability to breastfeed.In some patients, it may be possible to avoid the horizontal incision beneath the breast as well as the vertical incision that runs from the bottom edge of the areola to the breast crease. If you are a good candidate for a modified technique, your plastic surgeon will discuss this with you.",
+    description:
+      "A mastopexy is performed under general anesthesia or intravenous sedation in a hospital, free standing surgical center or surgeon’s office equipped with a surgical suite. Different techniques for removing breast skin and reshaping the breast determine the location of the incisions and resulting scars. Your surgeon will select a technique based on your breast size and shape, areola size and position, degree of breast sagging, skin quality and elasticity and how much extra skin you have. Your plastic surgeon will remove excess breast skin and shift the nipple and areola to a higher position.If your areola has become stretched, it can now be reduced in size.Skin that was formerly located above the areola is brought down and together, beneath the breast, to reshape the breast.Your surgeon will remove excess skin and close your incisions, tightening the skin, sewing the breast back together and placing sutures deep in the breast tissue to support the new breast position for a longer period of time.Scars are usually hidden under the breasts, although some light scarring may be seen on top of the breast.The nipples and areolas remain attached to underlying mounds of tissue, and this usually allows for the preservation of sensation and the ability to breastfeed.In some patients, it may be possible to avoid the horizontal incision beneath the breast as well as the vertical incision that runs from the bottom edge of the areola to the breast crease. If you are a good candidate for a modified technique, your plastic surgeon will discuss this with you.",
     faqs: [
       {
-        question: "Is a breast lift suitable for correcting asymmetry between breasts?",
+        question:
+          "Is a breast lift suitable for correcting asymmetry between breasts?",
         answer:
           "Yes, a breast lift can help improve symmetry by reshaping and lifting one or both breasts.",
       },
@@ -46,12 +48,12 @@ const BreastLift       = () => {
         question: "How much recovery time is needed?",
         answer:
           "Most patients return to normal activities within two weeks, but full recovery can take several months.",
-        },
-        {
-            question: "What not to do after a breast lift?",
-            answer:
-              "Avoid any strenuous activities during the first six weeks, such as pushing, pulling, or heavy lifting. This includes children, groceries, and pets! AFTERCARE: In the case of a breast lift, ice is not the solution for pain and swelling. Avoid ice packs as they can decrease vital blood flow to your incisions",
-          },
+      },
+      {
+        question: "What not to do after a breast lift?",
+        answer:
+          "Avoid any strenuous activities during the first six weeks, such as pushing, pulling, or heavy lifting. This includes children, groceries, and pets! AFTERCARE: In the case of a breast lift, ice is not the solution for pain and swelling. Avoid ice packs as they can decrease vital blood flow to your incisions",
+      },
     ],
   };
 
@@ -75,68 +77,68 @@ const BreastLift       = () => {
     autoplaySpeed: 3000,
   };
   return (
-<div className = "mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-<div className = "service-info p-5 flex flex-col justify-center items-center">
-<div className = "max-w-3xl text-center">
-<h2  className = "text-4xl text-center font-bold sm:text-4xl">
+    <div className = "mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+    <div className = "service-info p-5 flex flex-col justify-center items-center">
+    <div className = "max-w-3xl text-center">
+    <h2  className = "text-4xl text-center font-bold sm:text-4xl">
             {service.name}
           </h2>
         </div>
 
-        <div    className               = "grid grid-cols-1  lg:grid-cols-2 lg:gap-8">
-        <div    className               = "lg:w-[200%] sm:w-[100%] p-10">
-        <Slider {...settings} className = "sliders w-[100%] sm:w-[50%] ">
+        <div className="grid grid-cols-1  lg:grid-cols-2 lg:gap-8">
+          <div className="lg:w-[200%] sm:w-[100%] p-10  -z-10">
+            <Slider {...settings} className="sliders w-[100%] sm:w-[50%] ">
               {service.images.map((image, index) => (
-                <div key = {index}>
+                <div key={index}>
                   <img
-                    src       = {image}
-                    alt       = {`Slide ${index}`}
-                    className = "carousel-image w-full h-auto object-cover"
+                    src={image}
+                    alt={`Slide ${index}`}
+                    className="carousel-image w-full h-auto object-cover"
                   />
                 </div>
               ))}
             </Slider>{" "}
           </div>
-          <div     className = "lg:mt-20 text-start">
-          <article className = "space-y-4 text-gray-600 text-lg">
+          <div className="lg:mt-20 text-start">
+            <article className="space-y-4 text-gray-600 text-lg">
               <h3>{service.about}</h3>{" "}
             </article>
           </div>
         </div>
 
-        <div           className = "service-details flex justify-around my-5 flex-wrap border border-gray-200 rounded-lg p-10 bg-cover bg-[url('../../assets/bg.png')]">
-        <div           className = "detail-grid p-5 flex flex-col items-center text-center">
-        <FaTransgender className = "icons text-2xl" />{" "}
-        <p             className = "mt-1">{service.suitableFor}</p>
+        <div className="service-details flex justify-around my-5 flex-wrap border border-gray-200 rounded-lg p-10 bg-cover bg-[url('../../assets/bg.png')]">
+          <div className="detail-grid p-5 flex flex-col items-center text-center">
+            <FaTransgender className="icons text-2xl" />{" "}
+            <p className="mt-1">{service.suitableFor}</p>
           </div>
-          <div       className = "detail-grid p-5 flex flex-col items-center text-center">
-          <FaBandAid className = "icons text-2xl" />{" "}
-          <p         className = "mt-1">{service.benefit}</p>
+          <div className="detail-grid p-5 flex flex-col items-center text-center">
+            <FaBandAid className="icons text-2xl" />{" "}
+            <p className="mt-1">{service.benefit}</p>
           </div>
-          <div     className = "detail-grid p-5 flex flex-col items-center text-center">
-          <FaClock className = "icons text-2xl" />{" "}
-          <p       className = "mt-1">{service.timeRequired}</p>
+          <div className="detail-grid p-5 flex flex-col items-center text-center">
+            <FaClock className="icons text-2xl" />{" "}
+            <p className="mt-1">{service.timeRequired}</p>
           </div>
-          <div           className = "detail-grid p-5 flex flex-col items-center text-center">
-          <FaCalendarAlt className = "icons text-2xl" />{" "}
-          <p             className = "mt-1">{service.ageGroup}</p>
+          <div className="detail-grid p-5 flex flex-col items-center text-center">
+            <FaCalendarAlt className="icons text-2xl" />{" "}
+            <p className="mt-1">{service.ageGroup}</p>
           </div>
         </div>
 
-        <div className = "treatment-result-specialty flex flex-wrap lg:flex-nowrap justify-around my-5">
-        <div className = "diff aspect-[16/9] w-full lg:w-1/2">
-        <div className = "diff-item-1 bg-base-200 text-primary-content grid place-content-center text-9xl font-black">
-        <img src       = {service.beforeAfter.before} alt = "" />
+        <div className="treatment-result-specialty flex flex-wrap lg:flex-nowrap justify-around my-5">
+          <div className="diff aspect-[16/9] w-full lg:w-1/2">
+            <div className="diff-item-1 bg-base-200 text-primary-content grid place-content-center text-9xl font-black">
+              <img src={service.beforeAfter.before} alt="" />
             </div>
-            <div className = "diff-item-2 bg-base-200 grid place-content-center text-9xl font-black">
-            <img src       = {service.beforeAfter.after} alt = "" />
+            <div className="diff-item-2 bg-base-200 grid place-content-center text-9xl font-black">
+              <img src={service.beforeAfter.after} alt="" />
             </div>
-            <div className = "diff-resizer"></div>
+            <div className="diff-resizer"></div>
           </div>
-          <div className = "specialty space-y-4 text-gray-600 text-center p-5 w-full lg:w-1/2">
-          <h1  className = "font-raleway text-4xl">Specialty</h1>
+          <div className="specialty space-y-4 text-gray-600 text-center p-5 w-full lg:w-1/2">
+            <h1 className="font-raleway text-4xl">Specialty</h1>
             <hr />
-            <p className = "font-alegreya text-justify text-lg">
+            <p className="font-alegreya text-justify text-lg">
               Here at Slimfit, we know how {service.name} treatments can totally
               change the game. Our services blend cutting-edge techniques with
               top-notch personalized care to give you genuinely unmatched
@@ -147,14 +149,13 @@ const BreastLift       = () => {
           </div>
         </div>
 
-        <div className = "description-section my-5 text-center">
-        <h3  className = "font-raleway text-4xl">Description</h3>
+        <div className="description-section my-5 text-center">
+          <h3 className="font-raleway text-4xl">Description</h3>
           <hr />
-          <p className = "font-alegreya text-justify text-lg p-5">
+          <p className="font-alegreya text-justify text-lg p-5">
             {service.description}
           </p>
         </div>
-        
 
         <div className="faqs-section relative left-5% p-10 w-full my-5 text-center flex flex-col items-center  ">
           <h3 className="font-raleway text-2xl">FAQs</h3>

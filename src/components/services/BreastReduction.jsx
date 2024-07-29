@@ -75,16 +75,16 @@ const BreastReduction       = () => {
     autoplaySpeed: 3000,
   };
   return (
-<div className = "mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-<div className = "service-info p-5 flex flex-col justify-center items-center">
-<div className = "max-w-3xl text-center">
-<h2  className = "text-4xl text-center font-bold sm:text-4xl">
+    <div className = "mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+    <div className = "service-info p-5 flex flex-col justify-center items-center">
+    <div className = "max-w-3xl text-center">
+    <h2  className = "text-4xl text-center font-bold sm:text-4xl">
             {service.name}
           </h2>
         </div>
 
         <div    className               = "grid grid-cols-1  lg:grid-cols-2 lg:gap-8">
-        <div    className               = "lg:w-[200%] sm:w-[100%] p-10">
+        <div    className               = "lg:w-[200%] sm:w-[100%] p-10  -z-10">
         <Slider {...settings} className = "sliders w-[100%] sm:w-[50%] ">
               {service.images.map((image, index) => (
                 <div key = {index}>
@@ -154,21 +154,20 @@ const BreastReduction       = () => {
             {service.description}
           </p>
         </div>
-        
 
-        <div className="faqs-section relative left-5% p-10 w-full my-5 text-center flex flex-col items-center  ">
-          <h3 className="font-raleway text-2xl">FAQs</h3>
+        <div className = "faqs-section relative left-5% p-10 w-full my-5 text-center flex flex-col items-center  ">
+        <h3  className = "font-raleway text-2xl">FAQs</h3>
           <hr />
           {service.faqs.map((faq, index) => (
-            <div key={index} className="faq-item my-2 w-full">
+            <div key = {index} className = "faq-item my-2 w-full">
               <button
-                onClick={() => handleFAQClick(index)}
-                className="faq-question bg-blue-200 w-full text-lg text-black p-2 border-none text-left cursor-pointer font-alegreya"
+                onClick   = {() => handleFAQClick(index)}
+                className = "faq-question bg-blue-200 w-full text-lg text-black p-2 border-none text-left cursor-pointer font-alegreya"
               >
                 {faq.question}
               </button>
               {activeIndex === index && (
-                <div className="faq-answer p-2 bg-gray-200 border-l-4 border-gray-800 mt-1 font-alegreya text-lg text-justify">
+                <div className = "faq-answer p-2 bg-gray-200 border-l-4 border-gray-800 mt-1 font-alegreya text-lg text-justify">
                   {faq.answer}
                 </div>
               )}

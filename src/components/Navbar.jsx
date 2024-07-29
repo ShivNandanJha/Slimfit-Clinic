@@ -9,7 +9,7 @@ export default function Navbar() {
         {
           title: "Hair Transplant",
           desc: "Hair Transplant",
-          path: "javascript:void(0)",
+          path: "/hairtransplant",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ export default function Navbar() {
         {
           title: "Chin Augmentation",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/chinaugmentation",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ export default function Navbar() {
         {
           title: "Ear Reconstruction",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/eareconstruction",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ export default function Navbar() {
         {
           title: "Dimpleplasty",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/dimpleplasty",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,22 @@ export default function Navbar() {
         {
           title: "Facelift",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/facelift",
+          icon: (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-6 h-6"
+            >
+              <path d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75zM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 01-1.875-1.875V8.625zM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 013 19.875v-6.75z" />
+            </svg>
+          ),
+        },
+        {
+          title: "Rhinoplasty",
+          desc: "Duis aute irure dolor in reprehenderit",
+          path: "/rhinoplasty",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +110,7 @@ export default function Navbar() {
         {
           title: "Liposuction",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/liposuction",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +140,7 @@ export default function Navbar() {
         {
           title: "Abs Liposuction",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/abslipo",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +155,7 @@ export default function Navbar() {
         {
           title: "Arm Lift",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/armlift",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +170,7 @@ export default function Navbar() {
         {
           title: "Thigh Lift",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "thighlift",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +185,7 @@ export default function Navbar() {
         {
           title: "Buttock Contouring",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/buttockcontouring",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +205,7 @@ export default function Navbar() {
         {
           title: "RF Cavitation",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/rfcavitation",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -209,7 +224,7 @@ export default function Navbar() {
         {
           title: "Cryolipolysis",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/cryolipolysis",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -229,7 +244,7 @@ export default function Navbar() {
         {
           title: "Laser Treatments",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/lasertreatment",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -249,7 +264,47 @@ export default function Navbar() {
         {
           title: "Steambath",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/steambath",
+          icon: (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                clipRule="evenodd"
+              />
+              <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
+            </svg>
+          ),
+        },
+        {
+          title: "Heat Therapy",
+          desc: "Duis aute irure dolor in reprehenderit",
+          path: "/heattherapy",
+          icon: (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                clipRule="evenodd"
+              />
+              <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
+            </svg>
+          ),
+        },
+        {
+          title: "Vacuum Therapy",
+          desc: "Duis aute irure dolor in reprehenderit",
+          path: "/vaccumtherapy",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -270,12 +325,12 @@ export default function Navbar() {
     },
 
     {
-      label: "Non Surgical Treatments",
+      label: "Breast Surgery",
       navs: [
         {
-          title: "RF Cavitation",
+          title: "Breast Augmentation",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/breastaugmentation",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -292,9 +347,9 @@ export default function Navbar() {
           ),
         },
         {
-          title: "Cryolipolysis",
+          title: "Breast Lift",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/breastlift",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -312,9 +367,9 @@ export default function Navbar() {
           ),
         },
         {
-          title: "Laser Treatments",
+          title: "Breast Reduction",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/breastreduction",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -332,9 +387,9 @@ export default function Navbar() {
           ),
         },
         {
-          title: "Steambath",
+          title: "Gynecomastia",
           desc: "Duis aute irure dolor in reprehenderit",
-          path: "javascript:void(0)",
+          path: "/gynecomastia",
           icon: (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -354,7 +409,7 @@ export default function Navbar() {
       ],
     },
     {
-      label: "Non Surgical Treatments",
+      label: "Mummy Makeover",
       navs: [
         {
           title: "RF Cavitation",

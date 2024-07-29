@@ -148,11 +148,11 @@ export default function Contact() {
 
         {/* -----------------form----------------- */}
         <div className="p-10 flex flex-col lg:flex-row gap-10">
-        <div className = "flex-1 p-4 py-6 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-2 lg:w-[50%] sm:w-[100%]">
+        <div className = "flex-1 p-10 py-10 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-2 lg:w-[50%] sm:w-[100%]">
             <form >
               <div   className = "-mx-2 md:items-center md:flex">
               <div   className = "flex-1 px-2">
-              <label className = "block mb-2 text-sm text-gray-600 dark:text-gray-200">
+              <label className = "block mb-2 text-sm text-gray-600 dark:text-gray-200 text-start">
                     First Name
                   </label>
                   <input
@@ -163,7 +163,7 @@ export default function Contact() {
                 </div>
 
                 <div   className = "flex-1 px-2 mt-4 md:mt-0">
-                <label className = "block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                <label className = "block mb-2 text-sm text-gray-600 dark:text-gray-200 text-start">
                     Last Name
                   </label>
                   <input
@@ -175,7 +175,7 @@ export default function Contact() {
               </div>
 
               <div   className = "mt-4">
-              <label className = "block mb-2 text-sm text-gray-600 dark:text-gray-200">
+              <label className = "block mb-2 text-sm text-gray-600 dark:text-gray-200 text-start">
                   Email address
                 </label>
                 <input
@@ -185,7 +185,7 @@ export default function Contact() {
                 />
               </div>
               <div   className = "mt-4">
-              <label className = "block mb-2 text-sm text-gray-600 dark:text-gray-200">
+              <label className = "block mb-2 text-sm text-gray-600 dark:text-gray-200 text-start">
                 Phone
                 </label>
                 <input
@@ -196,7 +196,7 @@ export default function Contact() {
               </div>
 
               <div   className = "w-full mt-4">
-              <label className = "block mb-2 text-sm text-gray-600 dark:text-gray-200">
+              <label className = "block mb-2 text-sm text-gray-600 dark:text-gray-200  text-start">
                   Message
                 </label>
                 <textarea
@@ -220,7 +220,7 @@ export default function Contact() {
               marginHeight = "0"
               marginWidth  = "0"
               scrolling    = "no"
-              src          = "https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.241388125162!2d88.4153959764266!3d26.704734376771743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e441eddf143217%3A0xbd07eb0efcaba042!2sSlimfit%20Clinic%20-%20Best%20Cosmetic%20%26%20Aesthetic%20Clinic%20in%20Siliguri!5e0!3m2!1sen!2sus!4v1722233823289!5m2!1sen!2sus"
             ></iframe>
           </div>
         </div>

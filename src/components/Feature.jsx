@@ -115,18 +115,14 @@ const Content = () => {
                     alt="#_"
                   />
 
-                  <p className="line-clamp-4 mt-5 ">
-                    In our latest update, we've revolutionized the performance
-                    of our widgets, achieving a remarkable 80% increase in
-                    loading speeds. This breakthrough ensures a seamless
-                    experience across all Snowpeaks widgets, setting a new
-                    standard for efficiency and user satisfaction. Dive into the
-                    details to see how our widgets now lead the pack in speed
-                    and reliability.
-                  </p>
-                  <p>
-                    <a href="#_">Read more</a>
-                  </p>
+                  <ul className="line-clamp-6 mt-5 ">
+                    <li>Hair Transplant </li>
+                    <li>Face Lift</li>
+                    <li>Ear reconstruction</li>
+                    <li>Rhinoplasty</li>
+                    <li>Dimpleplasty </li>
+                    <li>Chin Augmentation</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -147,17 +143,14 @@ const Content = () => {
                     src={assets.feature2}
                     alt="#_"
                   />
-                  <p className="line-clamp-4 mt-5 ">
-                    Expanding your business operations has never been easier
-                    with our new Teams support feature. Now, you can empower
-                    your team by inviting members to manage and run your
-                    Snowpeak store collaboratively. Streamline your workflow and
-                    boost productivity by leveraging the strengths of your team,
-                    all accessible from our revamped Team settings page.
-                  </p>
-                  <p>
-                    <a href="#_">Read more</a>
-                  </p>
+                  <ul className="line-clamp-6 mt-5 ">
+                    <li>Liposuction </li>
+                    <li>Abdominoplasty</li>
+                    <li>Abs Liposuction</li>
+                    <li>Arm Lift</li>
+                    <li>Thigh Lift </li>
+                    <li>Buttock Contouring</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -178,18 +171,14 @@ const Content = () => {
                     src={assets.feature3}
                     alt="#_"
                   />
-                  <p className="line-clamp-4 mt-5 ">
-                    brought the power of our API directly to your fingertips
-                    with an intuitive dashboard feature that allows for
-                    effortless modification of subscription plans. Now, managing
-                    your subscriptions is as simple as clicking feature designed
-                    to streamline plan adjustments and proration handling.
-                    Experience the ease of subscription management with our
-                    user-friendly dashboard.
-                  </p>
-                  <p>
-                    <a href="#_">Read more</a>
-                  </p>
+                  <ul className="line-clamp-6 mt-5 ">
+                    <li>RF Cavitation </li>
+                    <li>Cryolipolysis</li>
+                    <li>Laser Treatment</li>
+                    <li>Steam Bath</li>
+                    <li>Heat Therapy </li>
+                    <li>Vacuum Therapy</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -210,18 +199,12 @@ const Content = () => {
                     src={assets.feature5}
                     alt="#_"
                   />
-                  <p className="line-clamp-4 mt-5 ">
-                    Unveiling our latest innovation, the Analytics Dashboard,
-                    designed to offer deeper insights into your performance with
-                    just a glance. Track visitor behavior, sales trends, and
-                    more with our comprehensive and intuitive interface. This
-                    new dashboard is engineered to help you make informed
-                    decisions, driving your business towards unparalleled
-                    growth.
-                  </p>
-                  <p>
-                    <a href="#_">Read more</a>
-                  </p>
+                  <ul className="line-clamp-6 mt-5 ">
+                    <li>Breast Augmentation </li>
+                    <li>Breast Lift</li>
+                    <li>Breast Reduction</li>
+                    <li>Gynecomastia Surgery</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -292,10 +275,13 @@ const Content = () => {
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="max-w-2xl text-center mx-auto mb-10 lg:mb-14">
           <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
-            Read our latest news
+            Choose Our Best Treatments
           </h2>
           <p className="mt-1 text-gray-600 dark:text-neutral-400">
-            We've helped some great companies brand, design and get to market.
+            We believe in the transformative power of beauty and healthcare
+            combined. Our mission is to empower individuals to achieve their
+            optimal health and beauty goals through personalized care and
+            cutting-edge treatments.
           </p>
         </div>
 
@@ -313,10 +299,10 @@ const Content = () => {
             </div>
             <div className="p-4 md:p-5">
               <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
-               Head And Face
+                Head And Face
               </p>
               <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
-              Hair Transplant
+                Hair Transplant
               </h3>
             </div>
           </a>
@@ -334,10 +320,10 @@ const Content = () => {
             </div>
             <div className="p-4 md:p-5">
               <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
-              Breast surgery
+                Breast surgery
               </p>
               <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
-               Breast reduction
+                Breast reduction
               </h3>
             </div>
           </a>
@@ -355,10 +341,10 @@ const Content = () => {
             </div>
             <div className="p-4 md:p-5">
               <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
-              Body Contouring
+                Body Contouring
               </p>
               <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
-               Buttock Contouring
+                Buttock Contouring
               </h3>
             </div>
           </a>
@@ -384,8 +370,6 @@ const Content = () => {
             </div>
           </a>
         </div>
-
-       
       </div>
     </div>
   );
