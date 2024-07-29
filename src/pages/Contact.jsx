@@ -148,7 +148,7 @@ export default function Contact() {
 
         {/* -----------------form----------------- */}
         <div className="p-10 flex flex-col lg:flex-row gap-10">
-        <div className = "flex-1 p-10 py-10 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-2 lg:w-[50%] sm:w-[100%]">
+        <div className = "flex-1 p-4 py-6 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-2 lg:w-[50%] sm:w-[120%]">
             <form >
               <div   className = "-mx-2 md:items-center md:flex">
               <div   className = "flex-1 px-2">

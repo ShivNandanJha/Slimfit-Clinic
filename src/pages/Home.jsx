@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { assets } from "../assets/assets";
 import herobanner from "../assets/Home.svg";
 import Faqs from "../components/Faqs";
@@ -54,20 +55,26 @@ const Home = () => {
               transformation starts here.
             </p> */}
 
-            <div className="mt-8 flex flex-wrap gap-4 text-center">
-              <a
-                href="#"
-                className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
-              >
-                Contact →
-              </a>
+            <div className="mt-8 flex flex-wrap gap-4 text-center z-10" >
+              <button>
+                <NavLink
+                  exact
+                  to="/contact"
+                  className="cursor-pointer block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+                >
+                  Contact →
+                </NavLink>
+              </button>
 
-              <a
-                href="#"
-                className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
-              >
-                Get Appointment →
-              </a>
+              <button>
+                <NavLink
+                  exact
+                  to="/appointment"
+                  className="cursor-pointer block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+                >
+                  Get Appointment →
+                </NavLink>
+              </button>
             </div>
           </div>
         </div>
@@ -116,7 +123,7 @@ const Home = () => {
             </h1>
 
             <p className="mt-3 text-gray-600 dark:text-neutral-400">
-             Want To know more about us
+              Want To know more about us
             </p>
 
             <div className="mt-7 sm:mt-12 mx-auto max-w-xl relative">
