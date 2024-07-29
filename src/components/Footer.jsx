@@ -13,13 +13,13 @@ const Footer = () => {
         <nav>
           <h6 className="footer-title">Social</h6>
           <div className="grid grid-flow-col gap-4">
-            <a>
+            <a href="https://www.facebook.com/slimfitclinicslg/" target="blank">
               <svg
-    width   = "40"
-    height  = "40"
-    viewBox = "0 0 48 48"
-    fill    = "none"
-    xmlns   = "http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <g clipPath="url(#clip0_17_24)">
                   <path
@@ -38,13 +38,16 @@ const Footer = () => {
                 </defs>
               </svg>
             </a>
-            <a>
+            <a
+              href="https://www.youtube.com/channel/UCNs6igeRmh5VjTdK9gBP0NA/videos"
+              target="blank"
+            >
               <svg
-                width   = "40"
-                height  = "40"
-                viewBox = "0 0 48 48"
-                fill    = "none"
-                xmlns   = "http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <g clipPath="url(#clip0_17_47)">
                   <path
@@ -63,7 +66,10 @@ const Footer = () => {
                 </defs>
               </svg>
             </a>
-            <a>
+            <a
+              href="https://www.instagram.com/slimfitclinicslg/"
+              target="blank"
+            >
               <svg
                 width="40"
                 height="40"
@@ -101,12 +107,12 @@ const Footer = () => {
                 />
                 <defs>
                   <radialGradient
-                    id                = "paint0_radial_147648_827"
-                    cx                = "0"
-                    cy                = "0"
-                    r                 = "1"
-                    gradientUnits     = "userSpaceOnUse"
-                    gradientTransform = "translate(12.7501 51.697) rotate(-90) scale(47.5715 44.2453)"
+                    id="paint0_radial_147648_827"
+                    cx="0"
+                    cy="0"
+                    r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(12.7501 51.697) rotate(-90) scale(47.5715 44.2453)"
                   >
                     <stop stopColor="#FFDD55" />
                     <stop offset="0.1" stopColor="#FFDD55" />
