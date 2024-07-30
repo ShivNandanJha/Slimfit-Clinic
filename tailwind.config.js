@@ -7,8 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: { 
-        "Alegrya": ['Alegrya', 'serif'],
-        "Playfair":["Playfair Display", 'serif']
+        Alegrya : ['Alegrya', 'serif'],
+        Playfair: ["Playfair Display", 'serif'],
+        Calgary : ["Calgary"],
+        Asap:['Asap']
     } 
     },
   },

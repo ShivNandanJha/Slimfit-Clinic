@@ -39,6 +39,10 @@ import feature4 from './feature4.jpeg'
 import feature5 from './feature5.jpeg'
 import feature6 from './feature6.jpeg'
 import client from './client.jpeg'
+import time from './time.svg'
+import gender from './gender.svg'
+import bandage from './bandage.svg'
+import age from './age.svg'
 
 export const assets = {
   logo,
@@ -81,5 +85,9 @@ av3,
   feature4,
   feature5,
   feature6,
-  client
+  client,
+  time,
+  gender,
+  bandage,
+  age
 };

@@ -37,7 +37,7 @@ const Home = () => {
 
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-start ">
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className="text-3xl text-start font-bold  sm:text-5xl fontFamily: font-Playfair ">
+            <h1 className="text-3xl text-start font-bold  sm:text-5xl fontFamily: font-Calgary">
               Complete Aesthetic Solutions for
               <strong className="block font-bold text-rose-500">
                 {" "}
@@ -118,7 +118,7 @@ const Home = () => {
       <div className="relative overflow-hidden">
         <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-6xl font-bold text-gray-800 dark:text-neutral-200">
+            <h1 className="text-4xl sm:text-6xl font-bold text-gray-600 dark:text-neutral-200">
               Request a Callback
             </h1>
 

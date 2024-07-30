@@ -2,16 +2,16 @@ import logo from "../assets/logo.png";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer bg-[#999696] text-black p-10">
+      <footer className="footer bg-blue-100 text-black p-10">
         <aside>
-          <img className="w-20 " src={logo} alt="logo" />
-          <h1 className="text-2xl font-AlegryaSans">
+          <img className="w-20 font-Asap " src={logo} alt="logo" />
+          <h1 className="text-2xl font-Calgary">
             Slimfit - Weight Loss & Body Aesthethic
           </h1>
           Beauty & Healthcare Clinic
         </aside>
         <nav>
-          <h6 className="footer-title">Social</h6>
+          <h6 className="footer-title font-Asap">You can find us on</h6>
           <div className="grid grid-flow-col gap-4">
             <a href="https://www.facebook.com/slimfitclinicslg/" target="blank">
               <svg
