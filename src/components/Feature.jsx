@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { assets } from "../assets/assets";
+import Scroll from "./Scroll";
 
 const Content = () => {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="grid gap-10 lg:grid-cols-2">
-        <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
-          <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
+    <div className = "px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className = "grid gap-10 lg:grid-cols-2">
+    <div className = "flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
+    <div className = "flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
             <svg
               className="w-16 h-auto text-orange-500"
               width="121"
@@ -95,7 +96,8 @@ const Content = () => {
               advanced skincare and aesthetic treatments. Discover personalized
               care and achieve radiant results today.
             </p>
-          </div>{" "}
+          </div>
+          <Scroll/>
         </div>
         <div className="space-y-20 overflow-y-auto prose-sm prose text-gray-500 divide-y max-h-[50vh] mpx-8  mx-auto md:px-12 lg:px-32 max-w-7xl prose-headings:font-normal prose-headings:text-xl ">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-32">

@@ -1,7 +1,7 @@
 import { assets } from "../assets/assets";
 
 const About = () => {
-  return (
+  return (<>
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
@@ -24,13 +24,13 @@ const About = () => {
               voluptates. Vel!
             </p>
           </div>
-          <div>
-            {/* icon section */}
+          {/* <div>
+           
             <div className="py-14">
               <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="flex justify-center">
                   <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-16 md:grid-cols-3 lg:grid-cols-4">
-                    {/* LOGO 1 */}
+                
                     <li>
                       <svg
                         className="w-28 my-auto"
@@ -49,7 +49,7 @@ const About = () => {
                       </svg>
                     </li>
 
-                    {/* LOGO 2 */}
+                
                     <li>
                       <svg
                         className="w-28 my-auto"
@@ -70,7 +70,7 @@ const About = () => {
                       </svg>
                     </li>
 
-                    {/* LOGO 3 */}
+             
                     <li>
                       <svg
                         className="w-28 my-auto"
@@ -91,7 +91,6 @@ const About = () => {
                       </svg>
                     </li>
 
-                    {/* LOGO 4 */}
                     <li>
                       <svg
                         className="w-28 my-auto"
@@ -122,7 +121,7 @@ const About = () => {
                       </svg>
                     </li>
 
-                    {/* LOGO 5 */}
+        
                     <li>
                       <svg
                         className="w-28 my-auto"
@@ -153,7 +152,6 @@ const About = () => {
                       </svg>
                     </li>
 
-                    {/* LOGO 6 */}
                     <li>
                       <svg
                         className="w-28 my-auto"
@@ -170,7 +168,7 @@ const About = () => {
                       </svg>
                     </li>
 
-                    {/* LOGO 7 */}
+                    
                     <li>
                       <svg
                         className="w-28 my-auto"
@@ -187,7 +185,7 @@ const About = () => {
                       </svg>
                     </li>
 
-                    {/* LOGO 8 */}
+              
                     <li>
                       <svg
                         className="w-28 my-auto"
@@ -221,7 +219,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         {/*--------------------- article----------------------------- */}
         <div className="flex items-center justify-center -mx-4 lg:pl-8">
@@ -276,7 +274,9 @@ const About = () => {
               <div className="grid py-8 sm:grid-cols-4">
                 <div className="mb-4 sm:mb-0">
                   <div className="space-y-1 text-xs font-semibold tracking-wide uppercase">
-                    <p className="text-gray-600 text-xl text-start">Beauty Treatments</p>
+                    <p className="text-gray-600 text-xl text-start">
+                      Beauty Treatments
+                    </p>
                   </div>
                 </div>
                 <div className="sm:col-span-3 lg:col-span-2">
@@ -304,7 +304,9 @@ const About = () => {
               <div className="grid py-8 sm:grid-cols-4">
                 <div className="mb-4 sm:mb-0">
                   <div className="space-y-1 text-xs font-semibold tracking-wide uppercase">
-                    <p className="text-gray-600 text-xl  text-start">Body Contouring</p>
+                    <p className="text-gray-600 text-xl  text-start">
+                      Body Contouring
+                    </p>
                   </div>
                 </div>
                 <div className="sm:col-span-3 lg:col-span-2">
@@ -341,7 +343,8 @@ const About = () => {
                 </div>
               </section>
              */}
-    </div>
+  </div >
+  </>
   );
 };
 

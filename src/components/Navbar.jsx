@@ -661,7 +661,7 @@ export default function Navbar() {
                   <li key={idx}>
                     {item.isDrapdown ? (
                       <button
-                        className="w-full text-lg text-center font-semibold flex items-center justify-between gap-1 text-[#9d56b6] hover:text-indigo-600"
+                        className="w-full text-lg text-center font-semibold flex items-center justify-between gap-1 text-black hover:text-gray-500"
                         onClick={() =>
                           setDrapdownState({
                             idx,
@@ -702,7 +702,7 @@ export default function Navbar() {
                       <NavLink
                         exact
                         to={item.path}
-                        className="block text-[#9d56b6] font-semibold text-lg hover:text-indigo-600"
+                        className="block  font-semibold text-lg text-black hover:text-gray-500"
                       >
                         {item.title}
                       </NavLink>
@@ -714,7 +714,7 @@ export default function Navbar() {
                         <ul className="max-w-screen-xl mx-auto grid items-center gap-6 md:p-8 md:grid-cols-2 lg:grid-cols-3">
                           {item?.navs.map((dropdownItem, idx) => (
                             <li key={idx}>
-                              <p className="text-indigo-600 text-sm text-start underline">
+                              <p className="text-blue-500 text-md font-bold w-[10rem]  text-start border-2 border-blue-400 rounded-md px-2">
                                 {dropdownItem.label}
                               </p>
                               <ul className="mt-5 space-y-6">
@@ -728,7 +728,7 @@ export default function Navbar() {
                                         {navItem.icon}
                                       </div> */}
                                       <div>
-                                        <p className="text-gray-800 duration-200 group-hover:text-indigo-600 text-xl  md:text-base">
+                                        <p className="text-gray-800 duration-200 group-hover:text-blue-600 text-xl  md:text-base">
                                           {navItem.title}
                                         </p>
                                         {/* <p className="text-sm text-gray-600 group-hover:text-gray-800 mt-1">
