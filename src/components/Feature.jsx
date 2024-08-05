@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { assets } from "../assets/assets";
 import Scroll from "./Scroll";
+import CarouselControlsOutside from "./CardScroll";
 
 const Content = () => {
   return (
@@ -286,8 +287,9 @@ const Content = () => {
             cutting-edge treatments.
           </p>
         </div>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 lg:mb-14">
+        <CarouselControlsOutside />
+        
+        {/* <div className = "grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 lg:mb-14">
           <a
             className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
             href="#"
@@ -371,7 +373,7 @@ const Content = () => {
               </h3>
             </div>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

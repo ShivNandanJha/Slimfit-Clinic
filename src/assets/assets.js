@@ -1,14 +1,14 @@
 import eyelid from "./eyelift.png";
 import facelifting from "./facelift.png";
 import fatlose from "./fat.png";
-import hair from "./hair.jpeg";
+import hair from "./hair.jpg";
 import slimfit from "./slimfit.jpg";
 import slimfit2 from "./slimfit2.png";
 import slimfit3 from "./slimfit3.jpg";
 import liposuction from "./facelift.png";
-import breast_red from "./breast.jpeg";
+import breast from "./breast.jpg";
 import armLift from "./armlift.png";
-import thigh from "./thigh.jpeg";
+import thigh from "./thigh.jpg";
 import buttock from "./Buttock.jpeg";
 import logo from "./logo.png";
 import vid1 from "./vid1.mp4";
@@ -29,22 +29,26 @@ import client from "./client.jpeg";
 import gender from "./gender.svg";
 import bandage from "./bandage.svg";
 import age from "./age.svg";
-import scalpel from './04-scalpel.svg'
-import lip1 from './08-cosmetic surgery.svg'
-import lip2 from './09-filler.svg'
-import eye1 from './10-eye.svg'
-import eye2 from './11-filler.svg'
-import breast1 from './13-breast augmentation.svg'
-import breast2 from './15-breast augmentation.svg'
-import nose from './17-nose augmentation.svg'
-import lipo from './21-weight.svg'
-import hip from './22-weight.svg'
-import armlift from './23-liposuction.svg'
-import thighlift from './24-iposuction.svg'
-import botox from './25-botox.svg'
-import chin from './27-botox.svg'
-import face from './28-facial.svg'
-
+import scalpel from "./04-scalpel.svg";
+import lip1 from "./08-cosmetic surgery.svg";
+import lip2 from "./09-filler.svg";
+import eye1 from "./10-eye.svg";
+import eye2 from "./11-filler.svg";
+import breast1 from "./13-breast augmentation.svg";
+import breast2 from "./15-breast augmentation.svg";
+import nose from "./17-nose augmentation.svg";
+import lipo from "./21-weight.svg";
+import hip from "./22-weight.svg";
+import armlift from "./23-liposuction.svg";
+import thighlift from "./24-iposuction.svg";
+import botox from "./25-botox.svg";
+import chin from "./27-botox.svg";
+import face from "./28-facial.svg";
+import rhino from "./rhinoplasty.jpg";
+import chin_aug from "./chin_aug.jpg";
+import lipos from "./liposuction.jpg";
+import cryolipolysis from './cryolipolysis.jpg'
+import lip from './lip.jpg'
 
 export const assets = {
   scalpel,
@@ -62,15 +66,16 @@ export const assets = {
   botox,
   chin,
   face,
-
-
+  rhino,
+  chin_aug,
+  lipos,
   logo,
   eyelid,
   facelifting,
   fatlose,
   hair,
   liposuction,
-  breast_red,
+  breast,
   armLift,
   slimfit,
   slimfit2,
@@ -96,5 +101,6 @@ export const assets = {
   gender,
   bandage,
   age,
-  
+  cryolipolysis,
+  lip
 };
