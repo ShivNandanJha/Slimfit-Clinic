@@ -29,6 +29,7 @@ import client from "./client.jpeg";
 import gender from "./gender.svg";
 import bandage from "./bandage.svg";
 import age from "./age.svg";
+import time from './time.svg'
 import scalpel from "./04-scalpel.svg";
 import lip1 from "./08-cosmetic surgery.svg";
 import lip2 from "./09-filler.svg";
@@ -102,5 +103,6 @@ export const assets = {
   bandage,
   age,
   cryolipolysis,
-  lip
+  lip,
+  time
 };
