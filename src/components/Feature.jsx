@@ -1,14 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { assets } from "../assets/assets";
-import Scroll from "./Scroll";
 import CarouselControlsOutside from "./CardScroll";
 
 const Content = () => {
   return (
-    <div className = "px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-    <div className = "grid gap-10 lg:grid-cols-2">
-    <div className = "flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
-    <div className = "flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
+    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="grid gap-10 lg:grid-cols-2">
+        <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
+          <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
             <svg
               className="w-16 h-auto text-orange-500"
               width="121"
@@ -38,7 +37,7 @@ const Content = () => {
             </svg>
           </div>
           <div className="max-w-xl mb-6">
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-[#d6007b] sm:text-4xl sm:leading-none">
               We Are Slimfit
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
@@ -85,199 +84,96 @@ const Content = () => {
 
       {/* --------------service Section--------------- */}
 
-      <section>
-        <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
-          <div>
-            <h1 className="text-4xl font-semibold tracking-tighter text-gray-900 lg:text-6xl text-balance">
-              Transform Your Beauty with
-              <span className="text-gray-600"> Our Expert Services</span>
-            </h1>
-            <p className="mt-4 text-base font-medium text-gray-500 text-balance">
-              At Slimfit, we specialize in enhancing your natural beauty with
-              advanced skincare and aesthetic treatments. Discover personalized
-              care and achieve radiant results today.
-            </p>
-          </div>
-          <Scroll/>
-        </div>
-        <div className="space-y-20 overflow-y-auto prose-sm prose text-gray-500 divide-y max-h-[50vh] mpx-8  mx-auto md:px-12 lg:px-32 max-w-7xl prose-headings:font-normal prose-headings:text-xl ">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-32">
-            <div>
-              <div className="top-0 lg:sticky lg:pb-16">
-                <div className="pt-8">
-                  <h1 className="text-4xl">Head And Face</h1>
-                </div>
-              </div>
-            </div>
-            <div className="pt-8 lg:col-span-2">
-              <div className="flex-shrink-0">
-                <div className="mx-auto">
-                  <img
-                    className="aspect-[4/3] object-cover"
-                    src={assets.feature1}
-                    alt="#_"
-                  />
+      <section
+        className="px-6 md:px-16 mt-20 lg:px-24 py-1 "
 
-                  <ul className="line-clamp-6 mt-5 ">
-                    <li>Hair Transplant </li>
-                    <li>Face Lift</li>
-                    <li>Ear reconstruction</li>
-                    <li>Rhinoplasty</li>
-                    <li>Dimpleplasty </li>
-                    <li>Chin Augmentation</li>
-                  </ul>
-                </div>
+      >
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
+          {/* right section */}
+        <div className="flex-1 grid grid-cols-2 gap-6 mt-20">
+            <div className="w-full h-48 bg-pink-100 flex items-center justify-center rounded-md shadow-lg">
+              <img src={assets.feature1} alt="" />
+            </div>
+            <div className="w-full h-48 bg-pink-100 flex items-center justify-center rounded-md shadow-lg">
+              <img src={assets.feature5} alt="" />
+            </div>
+            <div className="w-full h-48 bg-pink-100 flex items-center justify-center rounded-md shadow-lg">
+              <img src={assets.feature6} alt="" />
+            </div>
+            <div className="w-full h-48 bg-pink-100 flex items-center justify-center rounded-md shadow-lg">
+              <img src={assets.feature4} alt="" />
+            </div>
+          </div>
+          {/* Left Section */}
+          <div className="flex-1">
+            <h2 className="text-[#d6007b] text-3xl md:text-4xl font-bold mb-6">
+              Our Services
+            </h2>
+            <p className="text-gray-600 text-lg md:text-xl mb-12">
+              We believe in the transformative power of beauty and healthcare
+              combined. Our mission is to empower individuals to achieve their
+              optimal health and beauty goals through personalized care and
+              cutting-edge treatments.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  Non-Surgical Treatments
+                </h3>
+                <ul className="text-gray-600">
+                  <li>RF Cavitation </li>
+                  <li>Cryolipolysis</li> <li>Laser Treatments </li>{" "}
+                  <li>Steambath</li> <li> Heat Therapy</li>{" "}
+                  <li>Vacuum Therapy</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  Head And Face
+                </h3>
+                <ul className="text-gray-600">
+                  <li> Hair Transplant</li>
+                  <li>Chin Augmentation</li>
+                  <li>Ear Reconstruction</li>
+                  <li>Dimpleplasty</li>
+                  <li>Facelift</li>
+                  <li>Rhinoplasty</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  Breast Surgery
+                </h3>
+                <ul className="text-gray-600">
+                  <li>Breast Augmentation</li>
+                  <li>Breast Lift</li>
+                  <li>Breast Reduction</li>
+                  <li>Gynecomastia Surgery</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  Body Contouring
+                </h3>
+                <ul className="text-gray-600">
+                  <li>Liposuction</li>
+                  <li>Abdominoplasty</li>
+                  <li> Abs Liposuction </li>
+                  <li>Arm and Thigh Lift </li> <li>Buttock Contouring</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-32">
-            <div>
-              <div className="top-0 lg:sticky lg:pb-16">
-                <div className="pt-8">
-                  <h1 className="text-4xl">Body Contouring </h1>
-                </div>
-              </div>
-            </div>
-            <div className="pt-8 lg:col-span-2">
-              <div className="flex-shrink-0">
-                <div className="mx-auto">
-                  <img
-                    className="aspect-[4/3] object-cover"
-                    src={assets.feature2}
-                    alt="#_"
-                  />
-                  <ul className="line-clamp-6 mt-5 ">
-                    <li>Liposuction </li>
-                    <li>Abdominoplasty</li>
-                    <li>Abs Liposuction</li>
-                    <li>Arm Lift</li>
-                    <li>Thigh Lift </li>
-                    <li>Buttock Contouring</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-32">
-            <div>
-              <div className="top-0 lg:sticky lg:pb-16">
-                <div className="pt-8">
-                  <h1 className="text-4xl">Non surgical Treatments</h1>
-                </div>
-              </div>
-            </div>
-            <div className="pt-8 lg:col-span-2">
-              <div className="flex-shrink-0">
-                <div className="mx-auto">
-                  <img
-                    className="aspect-[4/3] object-cover"
-                    src={assets.feature3}
-                    alt="#_"
-                  />
-                  <ul className="line-clamp-6 mt-5 ">
-                    <li>RF Cavitation </li>
-                    <li>Cryolipolysis</li>
-                    <li>Laser Treatment</li>
-                    <li>Steam Bath</li>
-                    <li>Heat Therapy </li>
-                    <li>Vacuum Therapy</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-32">
-            <div>
-              <div className="top-0 lg:sticky lg:pb-16">
-                <div className="pt-8">
-                  <h1 className="text-4xl">Breast Surgery</h1>
-                </div>
-              </div>
-            </div>
-            <div className="pt-8 lg:col-span-2">
-              <div className="flex-shrink-0">
-                <div className="mx-auto">
-                  <img
-                    className="aspect-[4/3] object-cover"
-                    src={assets.feature5}
-                    alt="#_"
-                  />
-                  <ul className="line-clamp-6 mt-5 ">
-                    <li>Breast Augmentation </li>
-                    <li>Breast Lift</li>
-                    <li>Breast Reduction</li>
-                    <li>Gynecomastia Surgery</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-32">
-            <div>
-              <div className="top-0 lg:sticky lg:pb-16">
-                <div className="pt-8">
-                  <h1 className="text-4xl">Mummy Makeover</h1>
-                </div>
-              </div>
-            </div>
-            <div className="pt-8 lg:col-span-2">
-              <div className="flex-shrink-0">
-                <div className="mx-auto">
-                  <img
-                    className="aspect-[4/3] object-cover"
-                    src={assets.feature4}
-                    alt="#_"
-                  />
-                  <p className="line-clamp-4 mt-5 ">
-                    Security is paramount, and with our latest update,
-                    introducing enhanced security features to safeguard your
-                    online store. Benefit from advanced encryption, real-time
-                    monitoring, and automated threat detection. These updates
-                    fortify your defenses, ensuring your data, and your ata,
-                    remains protected against evolving cyber threats.
-                  </p>
-                  <p>
-                    <a href="#_">Read more</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-32">
-            <div>
-              <div className="top-0 lg:sticky lg:pb-16">
-                <div className="pt-8">
-                  <h1 className="text-4xl">Bridal Makeup</h1>
-                </div>
-              </div>
-            </div>
-            <div className="pt-8 lg:col-span-2">
-              <div className="flex-shrink-0">
-                <div className="mx-auto">
-                  <img
-                    className="aspect-[4/3] object-cover"
-                    src={assets.feature6}
-                    alt="#_"
-                  />
-                  <p className="line-clamp-4 mt-5 ">
-                    Our latest update introduces Interactive Dashboards,
-                    allowing users to dynamically interact with their data like
-                    never before. Customize, explore, and gain insights in a
-                    wholly intuitive and seamless manner.
-                  </p>
-                  <p>
-                    <a href="#_">Read more</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          {/* Right Section */}
+
         </div>
       </section>
       {/* <!-- Card Blog --> */}
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="max-w-2xl text-center mx-auto mb-10 lg:mb-14">
-          <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
+          <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-[#d6007b]">
             Choose Our Best Treatments
           </h2>
           <p className="mt-1 text-gray-600 dark:text-neutral-400">
@@ -288,7 +184,7 @@ const Content = () => {
           </p>
         </div>
         <CarouselControlsOutside />
-        
+
         {/* <div className = "grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 lg:mb-14">
           <a
             className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"

@@ -23,11 +23,11 @@ export default function Faqs ()  {
             a: "If you've been searching for a way to get random questions, you've landed on the correct webpage. We created the Random Question Generator to ask you as many random questions as your heart desires."
         }
     ]
-  
+
     return (
         <section className="leading-relaxed max-w-screen-xl mt-20 mx-auto px-4 md:px-8">
             <div className="space-y-3 text-center">
-            <h1 className="text-4xl font-semibold tracking-tighter text-gray-600 lg:text-6xl text-balance">
+            <h1 className="text-4xl font-semibold tracking-tighter text-[#d6007b] lg:text-6xl text-balance">
                     Frequently Asked Questions
                 </h1>
                 <p className="text-gray-600 max-w-lg mx-auto text-lg">

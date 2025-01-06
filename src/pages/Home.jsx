@@ -55,7 +55,7 @@ const Home = () => {
               transformation starts here.
             </p> */}
 
-            <div className="mt-8 flex flex-wrap gap-4 text-center z-10" >
+            <div className="mt-8 flex flex-wrap gap-4 text-center z-10">
               <button>
                 <NavLink
                   exact
@@ -79,9 +79,17 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Content />
-      {/* --------------------Success Section---------------- */}
 
+      <div
+        style={{
+          backgroundImage: `url(${assets.bg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <Content />
+
+        {/*  */}
       <section className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/squared-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
         <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-x-12 items-start justify-between lg:flex md:px-8">
           <div className="sm:hidden lg:block lg:max-w-xl">
@@ -89,7 +97,7 @@ const Home = () => {
           </div>
           <div className="mt-6 gap-12 sm:mt-0 md:flex lg:block">
             <div className="max-w-2xl">
-              <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+              <h3 className="text-[#d6007b] text-3xl font-semibold sm:text-4xl">
                 We do our best to make customers always happy
               </h3>
               <p className="mt-3 max-w-xl">
@@ -101,7 +109,7 @@ const Home = () => {
               <ul className="inline-grid gap-y-8 gap-x-14 grid-cols-2">
                 {stats.map((item, idx) => (
                   <li key={idx} className="">
-                    <h4 className="text-4xl text-indigo-600 font-semibold">
+                    <h4 className="text-4xl text-[#d6007b] font-semibold">
                       {item.data}
                     </h4>
                     <p className="mt-3 font-medium">{item.title}</p>
@@ -111,20 +119,19 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-      {/* ------------------------Faqs------------------------ */}
-      <Faqs />
+        </section>
+{/* Faqs */}
+        <Faqs />
+        {/* callback */}
 
       <div className="relative overflow-hidden">
         <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-6xl font-bold text-gray-600 dark:text-neutral-200">
+            <h1 className="text-4xl sm:text-6xl font-bold text-[#d6007b] ">
               Request a Callback
             </h1>
 
-            <p className="mt-3 text-gray-600 dark:text-neutral-400">
-              Want To know more about us
-            </p>
+            <p className="mt-3 text-grey">Want To know more about us</p>
 
             <div className="mt-7 sm:mt-12 mx-auto max-w-xl relative">
               <form>
@@ -159,7 +166,7 @@ const Home = () => {
                   </div>
                   <div className="whitespace-nowrap pt-2 sm:pt-0 grid sm:block">
                     <a
-                      className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                      className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-[#d6007b] text-white disabled:opacity-50 disabled:pointer-events-none"
                       href="#"
                     >
                       Get started
@@ -218,6 +225,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      </div>
+
+
+
+
     </div>
   );
 };

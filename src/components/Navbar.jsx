@@ -714,7 +714,7 @@ export default function Navbar() {
                         <ul className="max-w-screen-xl mx-auto grid items-center gap-6 md:p-8 md:grid-cols-2 lg:grid-cols-3">
                           {item?.navs.map((dropdownItem, idx) => (
                             <li key={idx}>
-                              <p className="text-blue-500 text-md font-bold w-[10rem]  text-start border-2 border-blue-400 rounded-md px-2">
+                              <p className="text-[#d6007b] text-md font-bold w-[10rem]  text-start border-2 border-[#d6007b] rounded-md px-2">
                                 {dropdownItem.label}
                               </p>
                               <ul className="mt-5 space-y-6">
@@ -754,7 +754,7 @@ export default function Navbar() {
                   <NavLink
                     exact
                     to="/appointment"
-                    className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline"
+                    className="block py-3 px-4 font-medium text-center text-white bg-[#d6007b] hover:bg-[#f77bc1] active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline"
                   >
                     Get Appointment →
                   </NavLink>

@@ -50,6 +50,7 @@ import chin_aug from "./chin_aug.jpg";
 import lipos from "./liposuction.jpg";
 import cryolipolysis from './cryolipolysis.jpg'
 import lip from './lip.jpg'
+import bg from "./bg.jpg"
 
 export const assets = {
   scalpel,
@@ -104,5 +105,5 @@ export const assets = {
   age,
   cryolipolysis,
   lip,
-  time
+  time,bg
 };

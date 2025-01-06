@@ -41,7 +41,7 @@ export default function CarouselControlsOutside() {
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-20">
             <li>
               <NavLink
-                className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
+                className="group flex flex-col bg-[#d6007b] border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
                 exact
                 to="/lip"
               >
@@ -53,10 +53,10 @@ export default function CarouselControlsOutside() {
                   />
                 </div>
                 <div className="p-4 md:p-5">
-                  <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
+                  <p className="mt-2 text-xs uppercase text-white ">
                     Head And Face
                   </p>
-                  <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+                  <h3 className="mt-2 text-lg font-medium text-white group-hover:text-grey dark:text-neutral-300 dark:group-hover:text-white">
                     Lip Augmentation
                   </h3>
                 </div>
@@ -64,7 +64,7 @@ export default function CarouselControlsOutside() {
             </li>{" "}
             <li>
               <NavLink
-                className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
+                className="group flex flex-col bg-[#d6007b] border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
                 exact
                 to="/cryolipolysis"
               >
@@ -76,10 +76,10 @@ export default function CarouselControlsOutside() {
                   />
                 </div>
                 <div className="p-4 md:p-5">
-                  <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
+                  <p className="mt-2 text-xs uppercase text-white ">
                     Non Surgical
                   </p>
-                  <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+                  <h3 className="mt-2 text-lg font-medium text-white group-hover:text-grey dark:text-neutral-300 dark:group-hover:text-white">
                     Cryolipolysis
                   </h3>
                 </div>
@@ -87,7 +87,7 @@ export default function CarouselControlsOutside() {
             </li>
             <li>
               <NavLink
-                className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
+                className="group flex flex-col bg-[#d6007b] border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
                 exact
                 to="/hairtransplant"
               >
@@ -99,10 +99,10 @@ export default function CarouselControlsOutside() {
                   />
                 </div>
                 <div className="p-4 md:p-5">
-                  <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
+                  <p className="mt-2 text-xs uppercase text-white ">
                     Head And Face
                   </p>
-                  <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+                  <h3 className="mt-2 text-lg font-medium text-white group-hover:text-grey dark:text-neutral-300 dark:group-hover:text-white">
                     Hair Transplant
                   </h3>
                 </div>
@@ -112,7 +112,7 @@ export default function CarouselControlsOutside() {
               <NavLink
                 exact
                 to="/breastlift"
-                className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
+                className="group flex flex-col bg-[#d6007b] border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
               >
                 <div className="aspect-w-16 aspect-h-9">
                   <img
@@ -122,10 +122,10 @@ export default function CarouselControlsOutside() {
                   />
                 </div>
                 <div className="p-4 md:p-5">
-                  <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
+                  <p className="mt-2 text-xs uppercase text-white ">
                     Breast Surgery
                   </p>
-                  <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+                  <h3 className="mt-2 text-lg font-medium text-white group-hover:text-grey dark:text-neutral-300 dark:group-hover:text-white">
                     Breast Lift
                   </h3>
                 </div>
@@ -133,7 +133,7 @@ export default function CarouselControlsOutside() {
             </li>
             <li>
               <NavLink
-                className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
+                className="group flex flex-col bg-[#d6007b] border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
                 exact
                 to="/thighlift"
               >
@@ -145,10 +145,10 @@ export default function CarouselControlsOutside() {
                   />
                 </div>
                 <div className="p-4 md:p-5">
-                  <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
+                  <p className="mt-2 text-xs uppercase text-white ">
                     Body Contouring
                   </p>
-                  <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+                  <h3 className="mt-2 text-lg font-medium text-white group-hover:text-grey dark:text-neutral-300 dark:group-hover:text-white">
                     thigh Lift
                   </h3>
                 </div>
@@ -156,7 +156,7 @@ export default function CarouselControlsOutside() {
             </li>
             <li>
               <NavLink
-                className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
+                className="group flex flex-col bg-[#d6007b] border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
                 exact
                 to="/liposuction"
               >
@@ -168,10 +168,10 @@ export default function CarouselControlsOutside() {
                   />
                 </div>
                 <div className="p-4 md:p-5">
-                  <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
+                  <p className="mt-2 text-xs uppercase text-white ">
                     Body Contouring
                   </p>
-                  <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+                  <h3 className="mt-2 text-lg font-medium text-white group-hover:text-grey dark:text-neutral-300 dark:group-hover:text-white">
                     Liposuction
                   </h3>
                 </div>
@@ -179,7 +179,7 @@ export default function CarouselControlsOutside() {
             </li>
             <li>
               <NavLink
-                className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
+                className="group flex flex-col bg-[#d6007b] border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
                 exact
                 to="/chinaugmentation"
               >
@@ -191,10 +191,10 @@ export default function CarouselControlsOutside() {
                   />
                 </div>
                 <div className="p-4 md:p-5">
-                  <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
+                  <p className="mt-2 text-xs uppercase text-white ">
                     Head And Face
                   </p>
-                  <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+                  <h3 className="mt-2 text-lg font-medium text-white group-hover:text-grey dark:text-neutral-300 dark:group-hover:text-white">
                     Chin Augmentation
                   </h3>
                 </div>
@@ -202,7 +202,7 @@ export default function CarouselControlsOutside() {
             </li>
             <li>
               <NavLink
-                className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
+                className="group flex flex-col bg-[#d6007b] border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
                 exact
                 to="/rhinoplasty"
               >
@@ -214,10 +214,10 @@ export default function CarouselControlsOutside() {
                   />
                 </div>
                 <div className="p-4 md:p-5">
-                  <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
+                  <p className="mt-2 text-xs uppercase text-white ">
                     Head And Face
                   </p>
-                  <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+                  <h3 className="mt-2 text-lg font-medium text-white group-hover:text-grey dark:text-neutral-300 dark:group-hover:text-white">
                     Rhinoplasty
                   </h3>
                 </div>
@@ -231,7 +231,7 @@ export default function CarouselControlsOutside() {
           data-glide-el="controls"
         >
           <button
-            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-[#d6007b]/20 text-slate-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
             data-glide-dir="<"
             aria-label="prev slide"
           >
@@ -252,7 +252,7 @@ export default function CarouselControlsOutside() {
             </svg>
           </button>
           <button
-            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-[#d6007b]/20 text-slate-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
             data-glide-dir=">"
             aria-label="next slide"
           >

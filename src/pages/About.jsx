@@ -7,10 +7,10 @@ const About = () => {
         <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
           <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400"></div>
           <div className="max-w-xl mb-6">
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-[#d6007b] sm:text-4xl sm:leading-none">
               We Are India&apos;s Best
               <br className="hidden md:block" />
-              <span className="text-[#89DB7B]">Multispeciality Hospital</span>
+              <span className="text-gray-700">Multispeciality Hospital</span>
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -25,12 +25,12 @@ const About = () => {
             </p>
           </div>
           {/* <div>
-           
+
             <div className="py-14">
               <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="flex justify-center">
                   <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-16 md:grid-cols-3 lg:grid-cols-4">
-                
+
                     <li>
                       <svg
                         className="w-28 my-auto"
@@ -49,7 +49,7 @@ const About = () => {
                       </svg>
                     </li>
 
-                
+
                     <li>
                       <svg
                         className="w-28 my-auto"
@@ -70,7 +70,7 @@ const About = () => {
                       </svg>
                     </li>
 
-             
+
                     <li>
                       <svg
                         className="w-28 my-auto"
@@ -121,7 +121,7 @@ const About = () => {
                       </svg>
                     </li>
 
-        
+
                     <li>
                       <svg
                         className="w-28 my-auto"
@@ -168,7 +168,7 @@ const About = () => {
                       </svg>
                     </li>
 
-                    
+
                     <li>
                       <svg
                         className="w-28 my-auto"
@@ -185,7 +185,7 @@ const About = () => {
                       </svg>
                     </li>
 
-              
+
                     <li>
                       <svg
                         className="w-28 my-auto"
@@ -338,7 +338,7 @@ const About = () => {
                     <div className="h-full p-2 overflow-hidden duration-500 origin-bottom transform border rounded-3xl hover:rotate-0 hover:-translate-y-12 -rotate-12 hover:scale-150">
                       <img src={img1}  className="object-cover w-full h-full border shadow-2xl rounded-2xl aspect-square" alt="#_"/>
             </div>
-            
+
                   </div>
                 </div>
               </section>

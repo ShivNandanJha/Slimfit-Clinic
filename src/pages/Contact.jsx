@@ -5,22 +5,22 @@ export default function Contact() {
     <section className="bg-white dark:bg-gray-900">
       <div className="container px-6 py-12 mx-auto">
         <div>
-          <p className="font-medium text-blue-500 dark:text-blue-400">
+          <p className="font-bold text-5xl text-[#d6007b]">
             Contact us
           </p>
 
-          <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">
+          <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl ">
             We’d love to hear from you
           </h1>
 
-          <p className="mt-3 text-gray-500 dark:text-gray-400">
+          <p className="mt-3 text-gray-500 ">
             Our friendly team is always here to chat.
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          <div className="p-4 rounded-lg bg-blue-50 md:p-6 dark:bg-gray-800">
-            <span className="inline-block p-3 text-blue-500 rounded-lg bg-blue-100/80 dark:bg-gray-700">
+          <div className="p-4 rounded-lg bg-[#feeff7] md:p-6 dark:bg-gray-800">
+            <span className="inline-block p-3 text-white rounded-lg bg-[#d6007b] ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -40,16 +40,16 @@ export default function Contact() {
             <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
               Chat to sales
             </h2>
-            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+            <p className="mt-2 text-sm text-gray">
               Speak to our friendly team.
             </p>
-            <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
+            <p className="mt-2 text-sm text-grey">
               hello@merakiui.com
             </p>
           </div>
 
-          <div className="p-4 rounded-lg bg-blue-50 md:p-6 dark:bg-gray-800">
-            <span className="inline-block p-3 text-blue-500 rounded-lg bg-blue-100/80 dark:bg-gray-700">
+          <div className="p-4 rounded-lg bg-[#feeff7] md:p-6 dark:bg-gray-800">
+            <span className="inline-block p-3 text-white rounded-lg bg-[#d6007b]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -74,16 +74,16 @@ export default function Contact() {
             <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
               Chat to support
             </h2>
-            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+            <p className="mt-2 text-sm text-gray">
               We’re here to help.
             </p>
-            <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
+            <p className="mt-2 text-sm text-gray">
               Start new chat
             </p>
           </div>
 
-          <div  className = "p-4 rounded-lg bg-blue-50 md:p-6 dark:bg-gray-800">
-          <span className = "inline-block p-3 text-blue-500 rounded-lg bg-blue-100/80 dark:bg-gray-700">
+          <div  className = "p-4 rounded-lg bg-[#feeff7] md:p-6 dark:bg-gray-800">
+          <span className = "inline-block p-3 text-white rounded-lg bg-[#d6007b]">
               <svg
                 xmlns       = "http://www.w3.org/2000/svg"
                 fill        = "none"
@@ -108,16 +108,16 @@ export default function Contact() {
             <h2 className = "mt-4 text-base font-medium text-gray-800 dark:text-white">
               Visit us
             </h2>
-            <p className = "mt-2 text-sm text-gray-500 dark:text-gray-400">
+            <p className = "mt-2 text-sm text-gray">
               Visit our office HQ..
             </p>
-            <p className = "mt-2 text-sm text-blue-500 dark:text-blue-400">
+            <p className = "mt-2 text-sm text-gray">
               100 Smith Street Collingwood VIC 3066 AU
             </p>
           </div>
 
-          <div  className = "p-4 rounded-lg bg-blue-50 md:p-6 dark:bg-gray-800">
-          <span className = "inline-block p-3 text-blue-500 rounded-lg bg-blue-100/80 dark:bg-gray-700">
+          <div  className = "p-4 rounded-lg bg-[#feeff7] md:p-6 dark:bg-gray-800">
+          <span className = "inline-block p-3 text-white rounded-lg bg-[#d6007b]">
               <svg
                 xmlns       = "http://www.w3.org/2000/svg"
                 fill        = "none"
@@ -137,10 +137,10 @@ export default function Contact() {
             <h2 className = "mt-4 text-base font-medium text-gray-800 dark:text-white">
               Call us
             </h2>
-            <p className = "mt-2 text-sm text-gray-500 dark:text-gray-400">
+            <p className = "mt-2 text-sm text-gray">
               Mon-Fri from 8am to 5pm.
             </p>
-            <p className = "mt-2 text-sm text-blue-500 dark:text-blue-400">
+            <p className = "mt-2 text-sm text-gray">
               +1 (555) 000-0000
             </p>
           </div>
@@ -148,7 +148,7 @@ export default function Contact() {
 
         {/* -----------------form----------------- */}
         <div className="p-10 flex flex-col lg:flex-row gap-10">
-        <div className = "flex-1 p-4 py-6 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-2 lg:w-[50%] sm:w-[120%]">
+        <div className = "flex-1 p-4 py-6 rounded-lg bg-[#feeff7] md:p-2 lg:w-[50%] sm:w-[120%]">
             <form >
               <div   className = "-mx-2 md:items-center md:flex">
               <div   className = "flex-1 px-2">
@@ -206,7 +206,7 @@ export default function Contact() {
                 ></textarea>
               </div>
 
-              <button type="submit" className = "w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+              <button type="submit" className = "w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#feeff7]0 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                 Send message
               </button>
             </form>
