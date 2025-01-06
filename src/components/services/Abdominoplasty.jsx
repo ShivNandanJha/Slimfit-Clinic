@@ -75,7 +75,7 @@ export default function Abdominoplasty() {
         <div className="max-w-3xl text-center">
           <h1 className="text-4xl font-semibold tracking-tighter text-gray-600 lg:text-6xl text-balance">
             {service.name}
-            <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 dark:bg-gray-700"></hr>
+            <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 "></hr>
           </h1>
         </div>
 
@@ -134,7 +134,7 @@ export default function Abdominoplasty() {
             <h1 className="text-4xl font-semibold tracking-tighter text-gray-600 lg:text-4xl text-balance">
               Specialty
             </h1>
-            <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 dark:bg-gray-700"></hr>
+            <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 "></hr>
             <p className="font-alegreya text-justify text-lg">
               Here at Slimfit, we know how {service.name} treatments can totally
               change the game. Our services blend cutting-edge techniques with
@@ -151,7 +151,7 @@ export default function Abdominoplasty() {
             Description / Procedure
           </h1>
           {/* <hr className="w-40 relative align-middle text-center left-20 lg:left-[30rem] mt-3 bg-blue-400" /> */}
-          <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 dark:bg-gray-700"></hr>
+          <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 "></hr>
           <p className="font-alegreya text-justify text-lg p-5">
             {service.description}
           </p>
@@ -161,7 +161,7 @@ export default function Abdominoplasty() {
           <h1 className="text-4xl font-semibold tracking-tighter text-gray-600 lg:text-4xl text-balance">
             FAQs
           </h1>
-          <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 dark:bg-gray-700"></hr>
+          <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 "></hr>
           {service.faqs.map((faq, index) => (
             <div key={index} className="faq-item my-2 w-full">
               <button

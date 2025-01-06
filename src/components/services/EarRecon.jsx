@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 import img1 from "../../assets/treatments/earReconstruction/1.png";
 import img2 from "../../assets/treatments/earReconstruction/2.png";
 import img3 from "../../assets/treatments/earReconstruction/3.png";
@@ -43,7 +42,7 @@ const EarRecon = () => {
       },
       {
         question: "What age is best for ear reconstruction?",
-        answer  : 
+        answer:
           "Typically, children aged 6-7 are good candidates as their ears have nearly reached adult size.",
       },
       {
@@ -73,12 +72,12 @@ const EarRecon = () => {
     autoplaySpeed: 3000,
   };
   return (
-    <div className = "mx-auto max-w-screen-xl px-4 py-10 sm:px-6 sm:py-24 lg:px-8">
-    <div className = "service-info p-5 flex flex-col justify-center items-center">
-    <div className = "max-w-3xl text-center">
-    <h1  className = "text-4xl font-semibold tracking-tighter text-gray-600 lg:text-6xl text-balance">
+    <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 sm:py-24 lg:px-8">
+      <div className="service-info p-5 flex flex-col justify-center items-center">
+        <div className="max-w-3xl text-center">
+          <h1 className="text-4xl font-semibold tracking-tighter text-gray-600 lg:text-6xl text-balance">
             {service.name}
-            <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 dark:bg-gray-700"></hr>
+            <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 "></hr>
           </h1>
         </div>
 
@@ -110,9 +109,9 @@ const EarRecon = () => {
 
                 <p className="mt-1">{service.benefit}</p>
               </div>
-              <div className = "detail-grid p-5 flex flex-col items-center text-center">
-              <img src       = {assets.time} alt = "" />
-              <p   className = "mt-1">{service.timeRequired}</p>
+              <div className="detail-grid p-5 flex flex-col items-center text-center">
+                <img src={assets.time} alt="" />
+                <p className="mt-1">{service.timeRequired}</p>
               </div>
               <div className="detail-grid p-5 flex flex-col items-center text-center">
                 <img src={assets.age} alt="" />
@@ -137,7 +136,7 @@ const EarRecon = () => {
             <h1 className="text-4xl font-semibold tracking-tighter text-gray-600 lg:text-4xl text-balance">
               Specialty
             </h1>
-            <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 dark:bg-gray-700"></hr>
+            <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 "></hr>
             <p className="font-alegreya text-justify text-lg">
               Here at Slimfit, we know how {service.name} treatments can totally
               change the game. Our services blend cutting-edge techniques with
@@ -154,7 +153,7 @@ const EarRecon = () => {
             Description / Procedure
           </h1>
           {/* <hr className="w-40 relative align-middle text-center left-20 lg:left-[30rem] mt-3 bg-blue-400" /> */}
-          <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 dark:bg-gray-700"></hr>
+          <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 "></hr>
           <p className="font-alegreya text-justify text-lg p-5">
             {service.description}
           </p>
@@ -164,7 +163,7 @@ const EarRecon = () => {
           <h1 className="text-4xl font-semibold tracking-tighter text-gray-600 lg:text-4xl text-balance">
             FAQs
           </h1>
-          <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 dark:bg-gray-700"></hr>
+          <hr className="w-48 h-1 mx-auto my-4 bg-blue-400 border-0 rounded md:my-5 "></hr>
           {service.faqs.map((faq, index) => (
             <div key={index} className="faq-item my-2 w-full">
               <button

@@ -84,13 +84,10 @@ const Content = () => {
 
       {/* --------------service Section--------------- */}
 
-      <section
-        className="px-6 md:px-16 mt-20 lg:px-24 py-1 "
-
-      >
+      <section className="px-6 md:px-16 mt-20 lg:px-24 py-1 ">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
           {/* right section */}
-        <div className="flex-1 grid grid-cols-2 gap-6 mt-20">
+          <div className="flex-1 grid grid-cols-2 gap-6 mt-20">
             <div className="w-full h-48 bg-pink-100 flex items-center justify-center rounded-md shadow-lg">
               <img src={assets.feature1} alt="" />
             </div>
@@ -167,7 +164,6 @@ const Content = () => {
           </div>
 
           {/* Right Section */}
-
         </div>
       </section>
       {/* <!-- Card Blog --> */}
@@ -176,7 +172,7 @@ const Content = () => {
           <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-[#d6007b]">
             Choose Our Best Treatments
           </h2>
-          <p className="mt-1 text-gray-600 dark:text-neutral-400">
+          <p className="mt-1 text-gray-600 ">
             We believe in the transformative power of beauty and healthcare
             combined. Our mission is to empower individuals to achieve their
             optimal health and beauty goals through personalized care and
@@ -187,7 +183,7 @@ const Content = () => {
 
         {/* <div className = "grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 lg:mb-14">
           <a
-            className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
+            className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition "
             href="#"
           >
             <div className="aspect-w-16 aspect-h-9">
@@ -198,17 +194,17 @@ const Content = () => {
               />
             </div>
             <div className="p-4 md:p-5">
-              <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
+              <p className="mt-2 text-xs uppercase text-gray-600 ">
                 Head And Face
               </p>
-              <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+              <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 ">
                 Hair Transplant
               </h3>
             </div>
           </a>
 
           <a
-            className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
+            className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition "
             href="#"
           >
             <div className="aspect-w-16 aspect-h-9">
@@ -219,17 +215,17 @@ const Content = () => {
               />
             </div>
             <div className="p-4 md:p-5">
-              <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
+              <p className="mt-2 text-xs uppercase text-gray-600 ">
                 Breast surgery
               </p>
-              <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+              <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 ">
                 Breast reduction
               </h3>
             </div>
           </a>
 
           <a
-            className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
+            className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition "
             href="#"
           >
             <div className="aspect-w-16 aspect-h-9">
@@ -240,17 +236,17 @@ const Content = () => {
               />
             </div>
             <div className="p-4 md:p-5">
-              <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
+              <p className="mt-2 text-xs uppercase text-gray-600 ">
                 Body Contouring
               </p>
-              <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+              <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 ">
                 Buttock Contouring
               </h3>
             </div>
           </a>
 
           <a
-            className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
+            className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition "
             href="#"
           >
             <div className="aspect-w-16 aspect-h-9">
@@ -261,10 +257,10 @@ const Content = () => {
               />
             </div>
             <div className="p-4 md:p-5">
-              <p className="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
+              <p className="mt-2 text-xs uppercase text-gray-600 ">
                 Body Contouring
               </p>
-              <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+              <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 ">
                 Arm Lift
               </h3>
             </div>
