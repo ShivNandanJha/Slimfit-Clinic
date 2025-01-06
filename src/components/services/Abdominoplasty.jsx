@@ -70,7 +70,7 @@ export default function Abdominoplasty() {
     autoplaySpeed: 3000,
   };
   return (
-    <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 sm:py-24 lg:px-8 bg-white">
+    <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 sm:py-24 lg:px-8 ">
       <div className="service-info p-5 flex flex-col justify-center items-center">
         <div className="max-w-3xl text-center">
           <h1 className="text-4xl font-semibold tracking-tighter text-gray-600 lg:text-6xl text-balance">
