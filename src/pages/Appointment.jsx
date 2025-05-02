@@ -325,7 +325,7 @@ const Appointment = () => {
                   Submit
                 </button>
               </form>
-              
+
             </div>
             {showSuccessMessage && (
   <div className = "toast toast-top toast-start">
@@ -333,7 +333,7 @@ const Appointment = () => {
                   <span>Your appointment request has been booked successfully!</span>
                   <button onClick={closeSuccessMessage}> ❎</button>
                 </div>
-              
+
 </div>
             )}
           </div>
