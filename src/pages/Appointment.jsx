@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios"; // Add this line to import axios library
+import axios from "axios";
 
 const Appointment = () => {
   const [formData, setFormData] = useState({
@@ -16,8 +16,8 @@ const Appointment = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
+    setFormData((prev) => ({
+      ...prev,
       [name]: value,
     }));
   };
@@ -25,28 +25,24 @@ const Appointment = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Example URL for sending data to Telegram bot (replace with your own bot endpoint)
-      const telegramBotURL =
-        "https://api.telegram.org/bot6886100657:AAGqnx43OWjOIecx3ltgnidi4pgko2V58uk/sendMessage";
+      const telegramBotURL = "https://api.telegram.org/bot6886100657:AAGqnx43OWjOIecx3ltgnidi4pgko2V58uk/sendMessage";
       const message = `
-        New Appointment Request:
-        Name: ${formData.name}
-        Email: ${formData.email}
-        Phone: ${formData.phone}
-        Gender: ${formData.gender}
-        Service: ${formData.service}
-        Appointment Date: ${formData.appointmentDate}
-        Address: ${formData.address}
+New Appointment Request:
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Gender: ${formData.gender}
+Service: ${formData.service}
+Appointment Date: ${formData.appointmentDate}
+Address: ${formData.address}
       `;
 
-      // Sending data to Telegram bot
       await axios.post(telegramBotURL, {
-        chat_id: "6432775968", // Replace with your chat ID
+        chat_id: "6432775968",
         text: message,
       });
 
       setShowSuccessMessage(true);
-      // Optionally, reset form fields after successful submission
       setFormData({
         name: "",
         email: "",
@@ -57,288 +53,165 @@ const Appointment = () => {
         address: "",
       });
     } catch (error) {
-      console.error("Error sending message to Telegram:", error);
-      alert("Failed to send appointment request. Please try again later.");
+      alert("Failed to send appointment request. Try again later.");
+      console.error(error);
     }
   };
 
-  const closeSuccessMessage = () => {
-    setShowSuccessMessage(false);
-  };
   return (
-    <div>
-    <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"><div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)]"></div></div>
-      <section className="text-gray-600 body-font ">
-        <div className="container px-5 py-24 mx-auto flex flex-wrap">
-          <div className="flex flex-wrap w-full">
-            <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-              <div className="flex relative pb-12">
-                <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+    <div className="bg-[#f9f9f9] min-h-screen">
+      <div className="container mx-auto px-6 py-12">
+        <h1 className="text-4xl font-bold text-center text-rose-600 mb-12">
+          Book an Appointment
+        </h1>
+        <div className="flex flex-col lg:flex-row gap-12">
+          {/* Left Side – Steps */}
+          <div className="lg:w-2/5">
+            {[
+              { step: "STEP 1", desc: "Fill out the appointment form with correct details." },
+              { step: "STEP 2", desc: "Receive a confirmation call from Paramount Hospital." },
+              { step: "STEP 3", desc: "Visit the clinic on your scheduled date." },
+              { step: "STEP 4", desc: "Consult with the specialist for your procedure." },
+              { step: "FINISH", desc: "Follow our care guidance & continue your journey." },
+            ].map((item, idx) => (
+              <div className="flex relative pb-10" key={idx}>
+                <div className="absolute h-full w-10 flex items-center justify-center">
+                  {idx < 4 && <div className="h-full w-1 bg-gray-200"></div>}
                 </div>
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  </svg>
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#d6007b] text-white flex items-center text-left justify-center z-10">
+                  {item.step.startsWith("STEP") ? item.step.split(" ")[1] : "✓"}
                 </div>
-                <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                    STEP 1
-                  </h2>
-                  <p className="leading-relaxed">
-                    VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
-                    Kinfolk bespoke try-hard cliche palo santo offal.
-                  </p>
+                <div className="pl-4">
+                  <h3 className="font-bold text-left text-gray-800">{item.step}</h3>
+                  <p className="text-lg font-bold text-gray-600">{item.desc}</p>
                 </div>
               </div>
-              <div className="flex relative pb-12">
-                <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                </div>
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg>
-                </div>
-                <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                    STEP 2
-                  </h2>
-                  <p className="leading-relaxed">
-                    Vice migas literally kitsch +1 pok pok. Truffaut hot chicken
-                    slow-carb health goth, vape typewriter.
-                  </p>
-                </div>
-              </div>
-              <div className="flex relative pb-12">
-                <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                </div>
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle cx="12" cy="5" r="3"></circle>
-                    <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-                  </svg>
-                </div>
-                <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                    STEP 3
-                  </h2>
-                  <p className="leading-relaxed">
-                    Coloring book nar whal glossier master cleanse umami. Salvia
-                    +1 master cleanse blog taiyaki.
-                  </p>
-                </div>
-              </div>
-              <div className="flex relative pb-12">
-                <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                </div>
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
-                </div>
-                <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                    STEP 4
-                  </h2>
-                  <p className="leading-relaxed">
-                    VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
-                    Kinfolk bespoke try-hard cliche palo santo offal.
-                  </p>
-                </div>
-              </div>
-              <div className="flex relative">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                    <path d="M22 4L12 14.01l-3-3"></path>
-                  </svg>
-                </div>
-                <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                    FINISH
-                  </h2>
-                  <p className="leading-relaxed">
-                    Pitchfork ugh tattooed scenester echo park gastropub
-                    whatever cold-pressed retro.
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/*----------------------------------- form---------------------------- */}
-            <div className="mt-12 mx-auto px-4 p-8 bg-[#eee] lg:w-[40%] sm:w-[100%] sm:px-8 sm:rounded-xl">
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="text-start">
-                  <label htmlFor="name" className="font-medium">
-                    Full name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter Your Name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full mt-2 px-3 py-2 bg-white text-gray-500  outline-none border focus:border-gray-800 shadow-sm rounded-lg"
-                  />
-                </div>
-                <div   className = "text-start">
-                <label htmlFor   = "email" className = "font-medium">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full mt-2 px-3 py-2 text-gray-500  bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
-                  />
-                </div>
-                <div className="text-start">
-                  <label  htmlFor="phone" className="font-medium">Phone number</label>
-                  <div className="relative mt-2">
-                    <div className="absolute inset-y-0 left-3 my-auto h-6 flex items-center border-r pr-2">
-                      <select className="text-sm bg-transparent outline-none rounded-lg h-full">
-                        <option>+91</option>
-                      </select>
-                    </div>
-                    <input
-                      type="number"
-                      placeholder="1234567899"
-                      required name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="w-full pl-[4.5rem] pr-3 py-2 appearance-none  bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
-                    />
-                  </div>
-                </div>
-                <div className="relative flex flex-row flex-wrap gap-5 justify-start mt-2">
-                  <div className="text-start">
-                    <label htmlFor="gender" className="font-medium">Gender</label>
-                    <select
-                      type="text"  name="gender"
-                      placeholder="1234567899"
-                      required
-                      value={formData.gender}
-                      onChange={handleChange}
-                      className="text-start w-full pl-3  py-2 appearance-none  bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
-                    >
-                      <option value="male">Select your gender</option>
-                      <option value="male">Male</option>
-                      <option value="female">Female</option>
-                      <option value="other">Other</option>{" "}
-                    </select>
-                  </div>
+            ))}
+          </div>
 
-                  <div className="text-start">
-                    <label  htmlFor="appointmentDate" className="font-medium">Date</label>
-                    <input
-                      type="date"
-                      placeholder="Appointment Date"
-                      required  name="appointmentDate"
-                      value={formData.appointmentDate}
-                      onChange={handleChange}
-                      className="w-full  px-3 py-2 bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
-                    />
-                  </div>
-                </div>
-                <div className="text-start">
-                  <label htmlFor="service" className="font-medium">Service</label>
-                  <select
-                    type="text"   name="service"
-                    placeholder="1234567899"
-                    required
-                    value={formData.service}
-                    onChange={handleChange}
-                    className="text-start w-full pl-3  py-2 appearance-none  bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
-                  >
-                    <option value="Choose service">Choose service</option>
-                    <option value="Head And Face">Head And Face</option>
-                    <option value="Non Surgical">Non Surgical</option>
-                    <option value="body Contouring">body Contouring</option>
-                    <option value="Breast Surgery">Breast Surgery</option>
-                    <option value="Mummy Makeover">Mummy Makeover</option>
-                    <option value="Bridal Makeup">Bridal Makeup</option>
-                  </select>
-                </div>
-                <div className="text-start">
-                  <label  htmlFor="address" className="font-medium ">Address</label>
-                  <textarea
-                    rows="10"
-                    placeholder="Address"
-                    required  name="address"
-                    value={formData.address}
-                    onChange={handleChange}
-                    className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none  bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
-                  ></textarea>
-                </div>
+          {/* Right Side – Form */}
+          <div className="lg:w-3/5 bg-white p-8 rounded-lg shadow">
+            <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block mb-1 font-medium text-gray-700">Full Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Enter your name"
+                  className="w-full p-3 border rounded-md"
+                />
+              </div>
+
+              <div>
+                <label className="block mb-1 font-medium text-gray-700">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Enter your email"
+                  className="w-full p-3 border rounded-md"
+                />
+              </div>
+
+              <div>
+                <label className="block mb-1 font-medium text-gray-700">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="1234567890"
+                  className="w-full p-3 border rounded-md"
+                />
+              </div>
+
+              <div>
+                <label className="block mb-1 font-medium text-gray-700">Gender</label>
+                <select
+                  name="gender"
+                  required
+                  value={formData.gender}
+                  onChange={handleChange}
+                  className="w-full p-3 border rounded-md"
+                >
+                  <option value="">Select</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block mb-1 font-medium text-gray-700">Service</label>
+                <select
+                  name="service"
+                  required
+                  value={formData.service}
+                  onChange={handleChange}
+                  className="w-full p-3 border rounded-md"
+                >
+                  <option value="">Choose service</option>
+                  <option>Head and Face</option>
+                  <option>Non Surgical</option>
+                  <option>Body Contouring</option>
+                  <option>Breast Surgery</option>
+                  <option>Mummy Makeover</option>
+                  <option>Bridal Makeup</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block mb-1 font-medium text-gray-700">Appointment Date</label>
+                <input
+                  type="date"
+                  name="appointmentDate"
+                  required
+                  value={formData.appointmentDate}
+                  onChange={handleChange}
+                  className="w-full p-3 border rounded-md"
+                />
+              </div>
+
+              <div className="md:col-span-2">
+                <label className="block mb-1 font-medium text-gray-700">Address</label>
+                <textarea
+                  name="address"
+                  required
+                  rows="4"
+                  value={formData.address}
+                  onChange={handleChange}
+                  placeholder="Enter your full address"
+                  className="w-full p-3 border rounded-md"
+                />
+              </div>
+
+              <div className="md:col-span-2">
                 <button
                   type="submit"
-                  className="w-full px-4 py-2 text-white font-medium bg-gray-800 hover:bg-gray-700 active:bg-gray-900 rounded-lg duration-150"
+                  className="w-full bg-[#d6007b] hover:bg-rose-700 text-white py-3 rounded-md font-semibold"
                 >
-                  Submit
+                  Book Appointment
                 </button>
-              </form>
+              </div>
+            </form>
 
-            </div>
             {showSuccessMessage && (
-  <div className = "toast toast-top toast-start">
-  <div className="alert alert-success">
-                  <span>Your appointment request has been booked successfully!</span>
-                  <button onClick={closeSuccessMessage}> ❎</button>
-                </div>
-
-</div>
+              <div className="mt-6 text-green-600 font-medium text-center">
+                ✅ Your appointment request has been submitted!
+                <button onClick={() => setShowSuccessMessage(false)} className="ml-3 text-red-500">
+                  ×
+                </button>
+              </div>
             )}
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
