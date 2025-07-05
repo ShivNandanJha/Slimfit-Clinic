@@ -1,85 +1,60 @@
 import { NavLink } from "react-router-dom";
 import { assets } from "../assets/assets";
-import herobanner from "../assets/Home.svg";
+import herobanner from "../assets/slimfit-hero-banner.jpg"; // Hero banner image
 import Faqs from "../components/Faqs";
 import Content from "../components/Feature";
 
+// Move static stats outside component to avoid re-creation on each render
+const stats = [
+  { data: "35K", title: "Customers" },
+  { data: "10K+", title: "Downloads" },
+  { data: "40+", title: "Countries" },
+  { data: "30M+", title: "Total revenue" },
+];
+
 const Home = () => {
   const sectionStyle = {
-    backgroundImage: `url(${herobanner})`, // Define background image using imported variable
+    backgroundImage: `url(${herobanner})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    boxShadow: "850px 0px 0px 0px   bg-[#f4f1ed] inset",
   };
-  const stats = [
-    {
-      data: "35K",
-      title: "Customers",
-    },
-    {
-      data: "10K+",
-      title: "Downloads",
-    },
-    {
-      data: "40+",
-      title: "Countries",
-    },
-    {
-      data: "30M+",
-      title: "Total revenue",
-    },
-  ];
+
   return (
     <div>
-      <section className="relative -z-10  " style={sectionStyle}>
-        <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+      {/* Hero Section */}
+      <section className="relative z-10" style={sectionStyle}>
+        <div className="pointer-events-none absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
 
-        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-start ">
+        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-start">
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className="text-3xl text-start font-bold  sm:text-5xl fontFamily: font-Calgary">
+            <h1 className="text-3xl text-start font-bold sm:text-5xl font-calgary">
               Complete Aesthetic Solutions for
               <strong className="block font-bold text-rose-500">
-                {" "}
-                Your Health and Beauty Needs{" "}
+                Your Health and Beauty Needs
               </strong>
             </h1>
 
-            {/* <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">
-              step into a world where your beauty aspirations become reality.
-              Our dedicated team offers a range of services, including targeted
-              weight loss plans, state-of-the-art hair transplants, and
-              personalized breast surgeries. Reimagine your look with face
-              reconstructions, liposuction, and mummy makeovers. Perfect your
-              special day with our exquisite bridal makeup services. Your
-              transformation starts here.
-            </p> */}
-
             <div className="mt-8 flex flex-wrap gap-4 text-center z-10">
-              <button>
-                <NavLink
-                  exact
-                  to="/contact"
-                  className="cursor-pointer block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
-                >
-                  Contact →
-                </NavLink>
-              </button>
+              <NavLink
+                to="/contact"
+                className="cursor-pointer block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+              >
+                Contact →
+              </NavLink>
 
-              <button>
-                <NavLink
-                  exact
-                  to="/appointment"
-                  className="cursor-pointer block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
-                >
-                  Get Appointment →
-                </NavLink>
-              </button>
+              <NavLink
+                to="/appointment"
+                className="cursor-pointer block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+              >
+                Get Appointment →
+              </NavLink>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Feature Content Section */}
       <div
         style={{
           backgroundImage: `url(${assets.bg})`,
@@ -89,17 +64,22 @@ const Home = () => {
       >
         <Content />
 
-        {/*  */}
+        {/* Stats Section */}
         <section className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/squared-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
           <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-x-12 items-start justify-between lg:flex md:px-8">
             <div className="sm:hidden lg:block lg:max-w-xl">
-              <img src={assets.client} className="rounded-lg" alt="" />
+              <img
+                src={assets.client}
+                alt="Happy Slimfit client"
+                className="rounded-lg"
+                loading="lazy"
+              />
             </div>
             <div className="mt-6 gap-12 sm:mt-0 md:flex lg:block">
               <div className="max-w-2xl">
-                <h3 className="text-[#d6007b] text-3xl font-semibold sm:text-4xl">
+                <h2 className="text-[#d6007b] text-3xl font-semibold sm:text-4xl">
                   We do our best to make customers always happy
-                </h3>
+                </h2>
                 <p className="mt-3 max-w-xl">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                   venenatis sollicitudin quam ut tincidunt.
@@ -108,7 +88,7 @@ const Home = () => {
               <div className="flex-none mt-6 md:mt-0 lg:mt-6">
                 <ul className="inline-grid gap-y-8 gap-x-14 grid-cols-2">
                   {stats.map((item, idx) => (
-                    <li key={idx} className="">
+                    <li key={idx}>
                       <h4 className="text-4xl text-[#d6007b] font-semibold">
                         {item.data}
                       </h4>
@@ -120,66 +100,54 @@ const Home = () => {
             </div>
           </div>
         </section>
-        {/* Faqs */}
-        <Faqs />
-        {/* callback */}
 
+        {/* FAQ Section */}
+        <Faqs />
+
+        {/* Callback Form Section */}
         <div className="relative overflow-hidden">
           <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-6xl font-bold text-[#d6007b] ">
+              <h2 className="text-4xl sm:text-6xl font-bold text-[#d6007b]">
                 Request a Callback
-              </h1>
+              </h2>
 
-              <p className="mt-3 text-grey">Want To know more about us</p>
+              <p className="mt-3 text-grey">Want to know more about us</p>
 
               <div className="mt-7 sm:mt-12 mx-auto max-w-xl relative">
-                <form>
-                  <div className="mx-auto max-w-2xl sm:flex sm:space-x-3 p-3 bg-white border rounded-lg shadow-lg shadow-gray-100 ">
+                <form onSubmit={(e) => e.preventDefault()}>
+                  <div className="mx-auto max-w-2xl sm:flex sm:space-x-3 p-3 bg-white border rounded-lg shadow-lg shadow-gray-100">
                     <div className="w-full pb-2 sm:pb-0">
-                      <label
-                        htmlFor="hs-hero-name-1"
-                        className="block text-sm font-medium "
-                      >
-                        <span className="sr-only">Your name</span>
-                      </label>
                       <input
                         type="text"
-                        id="hs-hero-name-1"
-                        className="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500  "
+                        className="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500"
                         placeholder="Your name"
+                        required
                       />
                     </div>
-                    <div className="pt-2 sm:pt-0 sm:ps-3 border-t border-gray-200 sm:border-t-0 sm:border-s w-full ">
-                      <label
-                        htmlFor="hs-hero-email-1"
-                        className="block text-sm font-medium "
-                      >
-                        <span className="sr-only">Your email address</span>
-                      </label>
+                    <div className="pt-2 sm:pt-0 sm:ps-3 border-t border-gray-200 sm:border-t-0 sm:border-s w-full">
                       <input
                         type="email"
-                        id="hs-hero-email-1"
-                        className="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500  "
-                        placeholder="Your name"
+                        className="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500"
+                        placeholder="Your email address"
+                        required
                       />
                     </div>
                     <div className="whitespace-nowrap pt-2 sm:pt-0 grid sm:block">
-                      <a
+                      <button
+                        type="submit"
                         className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-[#d6007b] text-white disabled:opacity-50 disabled:pointer-events-none"
-                        href="#"
                       >
                         Get started
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </form>
 
+                {/* Decorative SVGs */}
                 <div className="hidden md:block absolute top-0 end-0 -translate-y-12 translate-x-20">
                   <svg
                     className="w-16 h-auto text-orange-500"
-                    width="121"
-                    height="135"
                     viewBox="0 0 121 135"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -204,11 +172,10 @@ const Home = () => {
                     />
                   </svg>
                 </div>
+
                 <div className="hidden md:block absolute bottom-0 start-0 translate-y-10 -translate-x-32">
                   <svg
                     className="w-40 h-auto text-cyan-500"
-                    width="347"
-                    height="188"
                     viewBox="0 0 347 188"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
