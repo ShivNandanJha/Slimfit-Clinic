@@ -25,7 +25,7 @@ const Appointment = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const telegramBotURL = "https://api.telegram.org/bot6886100657:AAGqnx43OWjOIecx3ltgnidi4pgko2V58uk/sendMessage";
+      const telegramBotURL = "https://api.telegram.org/bot7046162386:AAE4XZ-o2TF10YyjM8zhfFPM0iLJ05edugc/sendMessage";
       const message = `
 New Appointment Request:
 Name: ${formData.name}
@@ -38,7 +38,7 @@ Address: ${formData.address}
       `;
 
       await axios.post(telegramBotURL, {
-        chat_id: "6432775968",
+        chat_id: "-1002166849055",
         text: message,
       });
 
@@ -59,7 +59,7 @@ Address: ${formData.address}
   };
 
   return (
-    <div className="bg-[#f9f9f9] min-h-screen">
+    <div className="bg-[#f9f9f9] min-h-screen ">
       <div className="container mx-auto px-6 py-12">
         <h1 className="text-4xl font-bold text-center text-rose-600 mb-12">
           Book an Appointment

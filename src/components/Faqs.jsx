@@ -1,28 +1,28 @@
 import FaqsCard from "./FaqsCard"
 export default function Faqs ()  {
 
-    const faqsList = [
-        {
-            q: "What are some random questions to ask?",
-            a: "That's exactly the reason we created this random question generator. There are hundreds of random questions to choose from so you're able to find the perfect random question."
-        },
-        {
-            q: "Do you include common questions?",
-            a: "This generator doesn't include most common questions. The thought is that you can come up with common questions on your own so most of the questions in this generator."
-        },
-        {
-            q: "Can I use this for 21 questions?",
-            a: "Yes! there are two ways that you can use this question generator depending on what you're after. You can indicate that you want 21 questions generated."
-        },
-        {
-            q: "Are these questions for girls or for boys?",
-            a: "The questions in this generator are gender neutral and can be used to ask either male of females (or any other gender the person identifies with)."
-        },
-        {
-            q: "What do you wish you had more talent doing?",
-            a: "If you've been searching for a way to get random questions, you've landed on the correct webpage. We created the Random Question Generator to ask you as many random questions as your heart desires."
-        }
-    ]
+  const faqsList = [
+    {
+        q: "What kind of treatments does Slimfit offer?",
+        a: "Slimfit offers non-surgical weight loss programs, body sculpting, inch loss treatments, skin tightening, anti-aging facials, and personalized beauty consultations tailored to your goals."
+    },
+    {
+        q: "Are the weight loss treatments safe?",
+        a: "Absolutely! All our procedures are FDA-approved, non-invasive, and performed by trained professionals under medical supervision to ensure your safety and comfort."
+    },
+    {
+        q: "How long does it take to see visible results?",
+        a: "Most clients begin to notice results within 2 to 4 weeks, depending on the treatment type and individual body response. Regular sessions and a healthy lifestyle enhance the results."
+    },
+    {
+        q: "Do you provide customized treatment plans?",
+        a: "Yes! Every body is different. Our experts will assess your goals, lifestyle, and medical background to design a treatment plan specifically for you."
+    },
+    {
+        q: "Can men also get treatment at Slimfit?",
+        a: "Of course! Our services are designed for all genders. Whether it’s weight management or skincare, we welcome everyone."
+    }
+];
 
     return (
         <section className="leading-relaxed max-w-screen-xl mt-20 mx-auto px-4 md:px-8">
